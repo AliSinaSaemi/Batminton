@@ -104,6 +104,12 @@ h5.heading-style-6,
 h6.heading-style-6 {
   font-weight: bold; }
 
+.mr-bt-0 {
+  margin-bottom: 0 !important; }
+
+.relative {
+  position: relative; }
+
 .text-jutify {
   text-align: justify; }
 
@@ -249,5 +255,44 @@ h6 {
     background-color: #15b095;
     padding: 0px 10px;
     border-radius: 5px; }
+
+.banner {
+  background-image: url(../../../img/bg/bg_1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  padding-bottom: 80px; }
+  .banner .container {
+    margin-bottom: 8.5rem !important; }
+
+.banner-content p {
+  font-size: 13px;
+  padding-right: 35px; }
+  .banner-content p:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #ef5c5c;
+    top: 5px;
+    right: 0; }
+.banner-content .btn-transparent {
+  position: absolute;
+  left: 25px;
+  bottom: -65px; }
+
+.btn-transparent {
+  font-size: 16px;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  transition: .3s; }
+  .btn-transparent:hover {
+    background-color: #fff;
+    color: #000000cf; }
 
 /*# sourceMappingURL=main.css.map */

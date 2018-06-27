@@ -1,0 +1,47 @@
+.banner {
+  background-image: url(../../../img/bg/bg_1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  padding-bottom: 80px;
+  .container {
+    margin-bottom: 8.5rem !important;
+  }
+}
+
+.banner-content {
+  p {
+    font-size: 13px;
+    padding-right: 35px;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #ef5c5c;
+      top: 5px;
+      right: 0;
+    }
+  }
+  .btn-transparent {
+    position: absolute;
+    left: 25px;
+    bottom: -65px;
+  }
+}
+
+.btn-transparent {
+  font-size: 16px;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  transition: .3s;
+  &:hover {
+    background-color: #fff;
+    color: #000000cf;
+  }
+}
