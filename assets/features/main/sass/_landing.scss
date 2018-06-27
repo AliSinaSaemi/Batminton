@@ -33,19 +33,6 @@
   }
 }
 
-.btn-transparent {
-  font-size: 16px;
-  padding: 10px 30px;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 20px;
-  transition: .3s;
-  &:hover {
-    background-color: #fff;
-    color: #000000cf;
-  }
-}
-
 .instantaneous-news {
   .sa_yellow_section {
     background-color: #fad32b;
@@ -81,5 +68,116 @@
   }
   .sa_news_slider {
     background-color: #1d252d;
+  }
+}
+
+.main-landing {
+  padding: 60px 0;
+  #owl-two {
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      position: absolute;
+      left: -5px;
+      top: -70px;
+      margin-top: 0;
+      .owl-next {
+        margin-right: 5px;
+      }
+      button {
+        padding: 3px 10px !important;
+        border: 2px solid #e6e6e6;
+        color: #e6e6e6;
+        transition: .4s;
+      }
+      [class*=owl-]:hover {
+        background: #ff0000;
+        text-decoration: none;
+      }
+    }
+  }
+  .sa_other_new_news {
+    img {
+      border: 2px solid #000;
+      border-radius: 10px;
+    }
+  }
+}
+
+.thumbnail {
+  .caption {
+    .info-news {
+      position: absolute;
+      color: #b3b3b3;
+      font-size: 12px;
+      bottom: 90px;
+    }
+    .commends {
+      right: 25px;
+      @extend .info-news;
+    }
+    .date {
+      left: 25px;
+      @extend .info-news;
+    }
+  }
+}
+
+.border-box {
+  .sa_border_box_2_menu {
+    font-size: 13px;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    li {
+      margin-right: 20px;
+      &:first-child {
+        margin-right: 0;
+      }
+      a {
+        color: #2a343d;
+        &:hover {
+          color: #2a343d;
+        }
+      }
+    }
+  }
+  .table-league-title {
+    a {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      padding: 15px;
+      color: #2a343d;
+      &.active {
+        color: red;
+        background-color: #fff;
+      }
+    }
+  }
+  .table-league {
+    font-size: 9px;
+    padding-top: 10px;
+    padding-right: 15px;
+    margin-top: 51px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    background-color: #fff;
+    .table th,
+    .table td {
+      padding: 0;
+      text-align: center;
+      border-top: 0;
+    }
+  }
+  &.no-padding.bg-gray {
+    overflow: hidden;
+    .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 }
