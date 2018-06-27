@@ -1,0 +1,89 @@
+/***************************** 
+
+          HEADER
+
+********************************/
+
+.header-one {
+  background-color: #1d252d;
+  @each $thiner in container,
+  row {
+    .#{$thiner} {
+      height: 55px;
+    }
+  }
+  .heading-style-3 {
+    font-weight: lighter;
+  }
+  ul {
+    li {
+      margin-left: 25px;
+      margin-right: 0;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.header-two {
+  padding: 30px 0;
+  background-color: #2a343d;
+  border-bottom: 2.5px solid #4c555c;
+  .sa_black_box {
+    width: 130px;
+    background-color: #3c4752;
+    height: 80px;
+  }
+  .sa_header_contact_texts {
+    width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    p {
+      font-size: 11px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+  ul {
+    li {
+      margin-left: 30px;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .form-control {
+    background-color: #3c4752;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 15px;
+    &::placeholder {
+      color: #fff !important;
+      font-weight: lighter;
+    }
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+.navbar {
+  background-color: #2a343d !important;
+  .navbar-nav {
+    margin-right: 25px !important;
+  }
+  .navbar-brand {
+    color: #fff;
+    background-color: #15b095;
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+}

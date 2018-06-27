@@ -9,6 +9,20 @@ body {
 .width-full {
   width: 100%; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+a.sa_white_link {
+  color: #FFf;
+  transition: .4s; }
+  a.sa_white_link:hover {
+    color: #2aaf98; }
+
+ul {
+  padding-right: 0; }
+
 .index-1 {
   z-index: 1; }
 
@@ -17,6 +31,9 @@ body {
 
 .index-3 {
   z-index: 3; }
+
+.font-thin {
+  font-weight: lighter; }
 
 .white {
   color: #fff !important; }
@@ -166,5 +183,71 @@ h6 {
 
 .dis-blc {
   display: block; }
+
+/***************************** 
+
+          HEADER
+
+********************************/
+.header-one {
+  background-color: #1d252d; }
+  .header-one .container {
+    height: 55px; }
+  .header-one .row {
+    height: 55px; }
+  .header-one .heading-style-3 {
+    font-weight: lighter; }
+  .header-one ul li {
+    margin-left: 25px;
+    margin-right: 0; }
+    .header-one ul li:last-child {
+      margin-left: 0; }
+
+.header-two {
+  padding: 30px 0;
+  background-color: #2a343d;
+  border-bottom: 2.5px solid #4c555c; }
+  .header-two .sa_black_box {
+    width: 130px;
+    background-color: #3c4752;
+    height: 80px; }
+  .header-two .sa_header_contact_texts {
+    width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px; }
+    .header-two .sa_header_contact_texts p {
+      font-size: 11px;
+      text-align: center;
+      margin-bottom: 5px; }
+    .header-two .sa_header_contact_texts a {
+      font-size: 15px; }
+  .header-two ul li {
+    margin-left: 30px; }
+    .header-two ul li:last-child {
+      margin-left: 0; }
+  .header-two .form-control {
+    background-color: #3c4752;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 15px; }
+    .header-two .form-control::placeholder {
+      color: #fff !important;
+      font-weight: lighter; }
+    .header-two .form-control:focus {
+      border: 0;
+      box-shadow: none; }
+
+.navbar {
+  background-color: #2a343d !important; }
+  .navbar .navbar-nav {
+    margin-right: 25px !important; }
+  .navbar .navbar-brand {
+    color: #fff;
+    background-color: #15b095;
+    padding: 0px 10px;
+    border-radius: 5px; }
 
 /*# sourceMappingURL=main.css.map */
