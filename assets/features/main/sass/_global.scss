@@ -27,6 +27,17 @@ a.sa_white_link {
   }
 }
 
+.center-box {
+  margin: 0 auto;
+  display: block;
+}
+.absolute-center {
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 ul {
   padding-right: 0;
 }
