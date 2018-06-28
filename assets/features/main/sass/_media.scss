@@ -39,6 +39,13 @@ $min_1200px: '(min-width: 1200px)';
   }
 }
 
+@media #{$min_768px} {
+  .cssmenu,
+  .sa-header-button {
+    display: none;
+  }
+}
+
 
 /* landing */
 

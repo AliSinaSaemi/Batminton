@@ -65,3 +65,17 @@ $('#owl-three').owlCarousel({
   $(document).ready(function(){
     $(".navbar").sticky({topSpacing:0});
   });
+
+/*=======================
+
+        sidenav.js
+ 
+=======================*/
+$('.sa-header-button').click(function (e) {
+  e.preventDefault();
+  $('.cssmenu').addClass('cssmenuShow');
+});
+
+$('.sa-close-btn').click(function () {
+  $('.cssmenu').removeClass('cssmenuShow');
+});

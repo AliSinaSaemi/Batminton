@@ -204,6 +204,16 @@ h6 {
 .dis-blc {
   display: block; }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+body::-webkit-scrollbar-thumb {
+  background-color: #F90;
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5; }
+
 .btn-transparent {
   font-size: 16px;
   padding: 10px 30px;
@@ -347,7 +357,7 @@ hr.line_1 {
 
 .navbar {
   background-color: #2a343d !important;
-  z-index: 3000 !important; }
+  z-index: 2000 !important; }
   .navbar .navbar-nav {
     margin-right: 25px !important; }
   .navbar .navbar-brand {
@@ -355,6 +365,225 @@ hr.line_1 {
     background-color: #15b095;
     padding: 0px 10px;
     border-radius: 5px; }
+
+body,
+.cssmenu {
+  height: 100%; }
+
+.cssmenu ul,
+.cssmenu li,
+.cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative; }
+
+.cssmenu {
+  width: 100%;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center bottom; */
+  /* background: url(../../../img/bg/23.jpg); */
+  /* margin-right: auto; */
+  position: fixed;
+  transition: .5s;
+  z-index: 3000;
+  top: 0;
+  margin: 0;
+  background-color: #2d2d2d;
+  line-height: 1;
+  left: 100%;
+  /* overflow: scroll; */
+  overflow-x: hidden; }
+  .cssmenu li.navbar-brand {
+    color: #fff;
+    font-family: 'IRANSans';
+    font-size: 20px;
+    background-color: #15b095;
+    padding: 6px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px; }
+
+.cssmenu::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px; }
+
+.cssmenu::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 15px; }
+
+.cssmenu a {
+  line-height: 1.3; }
+
+.cssmenu input {
+  padding: 25px 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  background-color: #0000005c;
+  margin-bottom: 25px; }
+
+.cssmenu ul li.sa-close-btn {
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  z-index: 3120;
+  color: #fff;
+  transition: .3s; }
+
+.cssmenu ul li {
+  z-index: 3500; }
+
+.cssmenu ul li.sa-close-btn i {
+  margin-top: 7px; }
+
+.cssmenu ul li.sa-close-btn:hover {
+  background-color: #51acbd; }
+
+.cssmenu > ul > li:nth-child(2) {
+  padding-top: 20%;
+  padding-bottom: 0;
+  margin: 0; }
+
+.cssmenu > ul > li:nth-child(2) img {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  width: 100%; }
+
+.cssmenu > ul > li:nth-child(2) > a:hover {
+  background-color: transparent; }
+
+.cssmenu > ul > li {
+  margin: 10px; }
+
+.cssmenu > ul > li > a {
+  background: transparent;
+  transition: .3s;
+  border-radius: 5px; }
+
+.nav-item-ic {
+  position: absolute;
+  font-size: 18px;
+  top: 14px;
+  right: 15px; }
+
+.cssmenu > ul > li > a {
+  font-size: 14px;
+  display: block;
+  color: #ffffff; }
+
+.cssmenu > ul > li > a.list {
+  width: 200px;
+  margin: auto; }
+
+.cssmenu > ul > li > a > span {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  text-align: center; }
+
+.cssmenu > ul > li > a:hover {
+  text-decoration: none; }
+
+.cssmenu > ul > li.active {
+  border-bottom: none; }
+
+.cssmenu > ul > li:focus {
+  border-bottom: none; }
+
+.has-sub {
+  position: relative; }
+
+.cssmenu > ul > li.has-sub.active > a .open-dropdowner-nav {
+  transform: rotate(180deg); }
+
+/* Sub menu */
+.cssmenu ul ul {
+  display: none; }
+
+.cssmenu ul ul li {
+  margin: 2.5px 0; }
+
+.cssmenu ul ul li:last-child {
+  border-bottom: none; }
+
+.cssmenu ul ul a {
+  padding: 7px;
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  transition: .3s;
+  border-radius: 5px;
+  text-align: right; }
+
+.cssmenu ul ul a p {
+  font-size: 15px;
+  text-align: center;
+  color: #c5c3c3; }
+
+.cssmenu ul ul a:hover {
+  color: #fff; }
+
+.has-sub {
+  position: relative; }
+
+.open-dropdowner-nav {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  transition: .3s;
+  font-size: 20px; }
+
+.cssmenu > ul > li.has-sub.active > a .open-dropdowner-nav {
+  transform: rotate(180deg); }
+
+.cssmenuShow {
+  left: 0; }
+
+.sa-close-btn {
+  width: 35px;
+  height: 35px;
+  background-color: transparent; }
+
+.sa-header-button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2000; }
+
+.sa-header-button i {
+  margin-top: 10px;
+  color: #19bb9a;
+  font-size: 20px;
+  transition: 0.5s; }
+
+.is-sticky .sa-header-button i {
+  font-size: 20px; }
 
 .banner {
   background-image: url(../../../img/bg/bg_1.jpg);
@@ -503,6 +732,10 @@ hr.line_1 {
 @media (max-width: 768px) {
   .header-two,
   .header-one {
+    display: none; } }
+@media (min-width: 768px) {
+  .cssmenu,
+  .sa-header-button {
     display: none; } }
 /* landing */
 @media (max-width: 992px) {
