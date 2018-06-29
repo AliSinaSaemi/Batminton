@@ -1,3 +1,9 @@
+/*=======================
+
+        owl-Carousel.js
+ 
+=======================*/
+
 $('#owl-one').owlCarousel({
   rtl: true,
   loop: true,
@@ -62,9 +68,15 @@ $('#owl-three').owlCarousel({
   }
 });
 
-  $(document).ready(function(){
-    $(".navbar").sticky({topSpacing:0});
-  });
+/*=======================
+
+        Sticky.js
+ 
+=======================*/
+
+$(document).ready(function(){
+  $(".navbar").sticky({topSpacing:0});
+});
 
 /*=======================
 
@@ -79,3 +91,5 @@ $('.sa-header-button').click(function (e) {
 $('.sa-close-btn').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
 });
+
+

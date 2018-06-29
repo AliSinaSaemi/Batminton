@@ -108,3 +108,66 @@ hr.line_1 {
     width: 100%;
   }
 }
+
+.sa_divider_image {
+  background-image: url(../../../img/bg/Arabic_carpet.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 8px;
+  padding: 20px 0;
+  margin: 0 25px;
+  color: #fff;
+  .text {
+    padding-right: 20px;
+  }
+}
+
+.sa_pagnination_number_1 {
+  flex-direction: row-reverse;
+  width: 485px;
+  margin: 10px auto;
+  li {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+      .page-link {
+        border-top-right-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
+      }
+    }
+    &:first-child {
+      .page-link {
+        border-top-left-radius: 8px !important;
+        border-bottom-left-radius: 8px !important;
+      }
+    }
+    a {
+      border-radius: 8px;
+      color: #fff;
+      background-color: #15b095;
+      border: 1px solid #15b095;
+      transition: .3s;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: #15b09585;
+        border-color: #84d6c7;
+      }
+    }
+    &.active {
+      a {
+        background-color: #0d6f5e !important;
+        border-color: #0d6f5e !important;
+      }
+    }
+    &.disabled {
+      a {
+        color: #fff !important;
+        background-color: #525252 !important;
+        border-color: #525252 !important;
+      }
+    }
+  }
+}
