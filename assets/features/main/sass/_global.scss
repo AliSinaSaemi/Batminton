@@ -31,6 +31,7 @@ a.sa_white_link {
   margin: 0 auto;
   display: block;
 }
+
 .absolute-center {
   left: 0;
   right: 0;
@@ -41,6 +42,7 @@ a.sa_white_link {
 ul {
   padding-right: 0;
 }
+
 .btn {
   &:focus {
     border: 0 !important;
@@ -90,6 +92,51 @@ ul {
   }
 }
 
+@for $font_size from 0 through 5 {
+  .font-size-#{$font_size} {
+    font-size: 10px + $font_size;
+  }
+}
+
+@for $font_size_2 from 0 through 5 {
+  .font-size-2-#{$font_size_2} {
+    font-size: 5px + $font_size_2;
+  }
+}
+
+@for $left_relative from 0 through 10 {
+  .left-relative-#{$left_relative} {
+    left: #{$left_relative}px;
+  }
+}
+
+@for $top_relative from 0 through 10 {
+  .top-relative-#{$top_relative} {
+    top: #{$top_relative}px;
+  }
+}
+@for $top_relative from 11 through 15 {
+  .top-relative-#{$top_relative} {
+    top: #{$top_relative}px;
+  }
+}
+
+@for $bottom_relative from 0 through 10 {
+  .bottom-relative-#{$bottom_relative} {
+    bottom: #{$bottom_relative}px;
+  }
+}
+
+@for $right_relative from 0 through 10 {
+  .right-relative-#{$right_relative} {
+    right: #{$right_relative}px;
+  }
+}
+
+.border-none {
+  border: none;
+}
+
 h1,
 h2,
 h3,
@@ -114,6 +161,7 @@ li {
 .text_bold {
   font-weight: bold;
 }
+
 .mr-bt-0 {
   margin-bottom: 0 !important;
 }
