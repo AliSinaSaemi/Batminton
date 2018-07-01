@@ -49,6 +49,50 @@ $min_1200px: '(min-width: 1200px)';
 
 /* landing */
 
+@media #{$max_1200px} {
+  footer {
+    .footer-text {
+      margin-top: 45px;
+      font-size: 15px;
+    }
+    .heading-style-3 {
+      font-size: 16px;
+    }
+  }
+  .comment-1 {
+    .profile-details:before {
+      font-size: 60px;
+      top: -15px;
+      left: 6px;
+    }
+  }
+}
+
+@media #{$min_992px} and #{$max_1200px} {
+  .latest-matches-1 {
+    h3 {
+      font-size: 9px;
+      margin-bottom: -10px;
+    }
+    .scores {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .winner:before {
+      right: 0px;
+    }
+    .winner:after {
+      right: 12px;
+    }
+  }
+  .news-detail-1 {
+    span {
+      font-size: 8px;
+      top: -8px;
+    }
+  }
+}
+
 @media #{$max_992px} {
   .instantaneous-news {
     #owl-one {
@@ -69,6 +113,100 @@ $min_1200px: '(min-width: 1200px)';
       margin-bottom: 20px;
     }
   }
+  .latest-matches-1 {
+    h3 {
+      font-size: 13px;
+      margin-bottom: -10px;
+      text-align: center;
+    }
+    .middeler {
+      font-size: 50px;
+    }
+    .scores {
+      top: 40px;
+      span.score {
+        font-size: 40px;
+      }
+    }
+    .winner:after {
+      font-size: 30px;
+      top: -24px;
+      right: 62px;
+    }
+    .winner:before {
+      font-size: 24px;
+      width: 83px;
+      height: 35px;
+      top: -40px;
+      right: 28px;
+    }
+  }
+  .news-detail-1 {
+    span {
+      font-size: 15px;
+      color: #91949680;
+      position: relative;
+      top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  footer {
+    .footer-text {
+      margin-top: 0;
+      font-size: 18px;
+    }
+    .heading-style-2 {
+      text-align: center;
+    }
+  }
+  .social-media-1 {
+    ul {
+      margin-top: -40px;
+      margin-bottom: 25px !important;
+      a {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media #{$max_768px} {
+  .latest-matches-1 {
+    .winner:before {
+      font-size: 24px;
+      width: 83px;
+      height: 35px;
+      top: -29px;
+      right: 5px;
+    }
+    .winner:after {
+      font-size: 30px;
+      top: -13px;
+      right: 37px;
+    }
+    .scores {
+      top: 30px;
+      span.score {
+        font-size: 30px !important;
+      }
+    }
+  }
+  .comment-1 {
+    .profile-details {
+      &:before {
+        font-size: 115px;
+      }
+      h4 {
+        font-size: 35px !important;
+        margin-top: 35px;
+        margin-bottom: 25px !important;
+      }
+      span {
+        font-size: 18px !important;
+      }
+    }
+  }
 }
 
 @media #{$max_576px} {
@@ -85,6 +223,19 @@ $min_1200px: '(min-width: 1200px)';
       }
     }
   }
+  .comment-1 {
+    .text {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .latest-matches-1 {
+    display: none;
+  }
 }
 
 @media (max-width: 485px) {
@@ -96,6 +247,41 @@ $min_1200px: '(min-width: 1200px)';
   .border-box {
     .table-league {
       font-size: 12px;
+    }
+  }
+  .sa_pagnination_number_1 {
+    width: 248px;
+    .page-item {
+      .page-link.active,
+      .page-link {
+        padding: 5px 10px;
+      }
+    }
+  }
+  .sa_divider_image {
+    .text {
+      padding-right: 20px;
+      font-size: 15px;
+    }
+  }
+  .border-box {
+    .heading-style-3 {
+      line-height: 25px;
+      margin-top: 5px;
+      font-size: 15px;
+    }
+    span.span_size {
+      font-size: 10px;
+    }
+  }
+  .comment-1 {
+    .profile-details {
+      h4 {
+        font-size: 20px !important;
+      }
+      &:before {
+        font-size: 90px;
+      }
     }
   }
 }
@@ -114,3 +300,6 @@ $min_1200px: '(min-width: 1200px)';
     }
   }
 }
+
+
+/* footer */
