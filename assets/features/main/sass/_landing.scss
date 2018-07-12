@@ -80,8 +80,8 @@
     }
     .owl-nav {
       position: absolute;
-      left: -5px;
-      top: -70px;
+      left: 10px;
+      top: -67px;
       margin-top: 0;
       .owl-next {
         margin-right: 5px;
@@ -100,10 +100,10 @@
   }
   .sa_other_new_news {
     img {
-      border: 2px solid #000;
       border-radius: 10px;
     }
   }
+
 }
 
 .thumbnail {
@@ -113,6 +113,8 @@
       color: #b3b3b3;
       font-size: 12px;
       bottom: 90px;
+      opacity: 0;
+      transition: .5s;
     }
     .commends {
       right: 25px;
@@ -131,6 +133,7 @@
     position: absolute;
     top: 18px;
     left: 15px;
+    border-bottom: none;
     li {
       margin-right: 20px;
       &:first-child {
@@ -138,40 +141,16 @@
       }
       a {
         color: #2a343d;
+        border: none;
+        background-color: transparent !important;
+        transition: .2s;
         &:hover {
-          color: #2a343d;
+          color: #ff0000;
         }
       }
-    }
-  }
-  .table-league-title {
-    a {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      text-align: center;
-      padding: 15px;
-      color: #2a343d;
-      &.active {
-        color: red;
-        background-color: #fff;
+      .active {
+        color: #ff0000;
       }
-    }
-  }
-  .table-league {
-    font-size: 9px;
-    padding-top: 10px;
-    padding-right: 15px;
-    margin-top: 51px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    background-color: #fff;
-    .table th,
-    .table td {
-      padding: 0;
-      text-align: center;
-      border-top: 0;
     }
   }
   .number_1 {
@@ -186,6 +165,45 @@
       padding-right: 0;
       padding-left: 0;
     }
+  }
+}
+
+.demo-leagues {
+  .nav-tabs {
+    .nav-item {
+      width: 50%;
+      .nav-link {
+        text-align: center;
+        color: #dc3545;
+        background-color: #e6e6e6;
+        border-color: transparent;
+        border-radius: 0;
+        &.active {
+          border-color: transparent;
+          background-color: #fff !important;
+          color: #2a343d !important;
+        }
+        &:hover {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.table-league {
+  font-size: 11px;
+  padding-top: 10px;
+  padding-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: #fff;
+  .table th,
+  .table td {
+    padding: 0;
+    text-align: center;
+    border-top: 0;
   }
 }
 

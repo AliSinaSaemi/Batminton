@@ -22,8 +22,19 @@ a {
 a.sa_white_link {
   color: #FFf;
   transition: .4s;
+  &:after,
+  &:before {
+    transition: .4s;
+  }
   &:hover {
     color: #2aaf98;
+  }
+}
+
+a.sa_white_link:hover {
+  &:after,
+  &:before {
+    color: #2aaf98 !important;
   }
 }
 
@@ -160,6 +171,10 @@ li {
   direction: rtl;
   font-family: 'IRANSans';
   text-align: right;
+}
+
+.text_lighter {
+  font-weight: 300
 }
 
 .text_bold {

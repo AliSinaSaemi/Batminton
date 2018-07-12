@@ -29,7 +29,7 @@ $('#owl-two').owlCarousel({
   rtl: true,
   loop: true,
   margin: 10,
-  autoplay:true,
+  autoplay:false,
   autoplayTimeout:15000,
   nav: true,
   smartSpeed: 1000,

@@ -76,13 +76,13 @@
       </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary font-thin">
-      <a class="navbar-brand" href="#">خانه بدمینتون</a>
+      <a class="navbar-brand active" href="#">خانه بدمینتون</a>
       <button class="navbar-toggler d-none d-md-block d-lg-none d-xl-none" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">لیگ <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -109,7 +109,7 @@
         <li>
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="جستجو کنید ...">
         </li>
-        <li class="navbar-brand">خانه بدبینتون</li>
+        <li class="navbar-brand active">خانه بدبینتون</li>
         <li class=""><a class="list" href="#"><span>لیگ</span></a></li>
         <li class=""><a class="list" href="#"><span>مسابقات</span></a></li>
         <li class=""><a class="list" href="#"><span>بازیکنان</span></a></li>
@@ -169,127 +169,226 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 right-side">
-            <div class="border-box number_1 no-padding bg-gray">
-              <div class="container-fluid">
-                <div class="row table-league-title">
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                    <a class="active" href="#">لیگ جهانی</a>
+            <div class="demo-leagues border-box no-padding">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="world-tab" data-toggle="tab" href="#world" role="tab" aria-controls="world" aria-selected="true">لیگ جهانی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="champion-tab" data-toggle="tab" href="#champion" role="tab" aria-controls="champion" aria-selected="false">لیگ قهرمانی</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="world" role="tabpanel" aria-labelledby="world-tab">
+                  <div class="table-league text-center">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">ربتبه</th>
+                          <th scope="col">بازیکن</th>
+                          <th scope="col">تیم</th>
+                          <th scope="col">تعداد بازی</th>
+                          <th scope="col">امتیاز</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                    <a href="#">لیگ برتر</a>
+                </div>
+                <div class="tab-pane fade" id="champion" role="tabpanel" aria-labelledby="champion-tab">
+                  <div class="table-league text-center">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">ربتبه</th>
+                          <th scope="col">بازیکن</th>
+                          <th scope="col">تیم</th>
+                          <th scope="col">تعداد بازی</th>
+                          <th scope="col">امتیاز</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>علی شاه حسینی</td>
+                          <td>بارسلونا</td>
+                          <td>4</td>
+                          <td>20</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <div class="table-league text-center">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">ربتبه</th>
-                        <th scope="col">بازیکن</th>
-                        <th scope="col">تیم</th>
-                        <th scope="col">تعداد بازی</th>
-                        <th scope="col">امتیاز</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>علی شاه حسینی</td>
-                        <td>بارسلونا</td>
-                        <td>4</td>
-                        <td>20</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
-
-            <div class="thumbnail mt-4 d-none d-lg-block d-xl-block">
-              <div class="caption">
-                <div class="thumbnail-content">
-                  <p>برای مشاهده این گالری</p>
+            <a href="#">
+              <div class="thumbnail mt-4 d-none d-lg-block d-xl-block">
+                <div class="caption">
+                  <div class="thumbnail-content">
+                    <p>برای مشاهده این گالری</p>
+                  </div>
                 </div>
+                <img src="assets/img/thumb/bio2.jpg" alt="...">
               </div>
-              <img src="assets/img/thumb/bio2.jpg" alt="...">
-            </div>
-            <div class="thumbnail mt-4 d-none d-lg-block d-xl-block">
-              <div class="caption">
-                <div class="thumbnail-content">
-                  <p>برای مشاهده این گالری</p>
+            </a>
+            <a href="#">
+              <div class="thumbnail mt-4 d-none d-lg-block d-xl-block">
+                <div class="caption">
+                  <div class="thumbnail-content">
+                    <p>برای مشاهده این گالری</p>
+                  </div>
                 </div>
+                <img src="assets/img/thumb/gallary.jpg" alt="...">
               </div>
-              <img src="assets/img/thumb/gallary.jpg" alt="...">
-            </div>
+            </a>
             <div class="d-sm-block d-none d-lg-none d-xl-none">
               <div class="row ">
                 <div class="col-sm-6 col-md-6">
@@ -354,7 +453,7 @@
                       <div class="col-4 scores text-center relative top-relative-15">
                         <span class="text_bold winner score">105</span>
                         <span class="text_bold middeler">:</span>
-                        <span class="text_bold score">99</span>
+                        <span class="text_bold loser score">99</span>
                         <div class="news-detail-1 text-center">
                           <span>home</span>
                         </div>
@@ -384,7 +483,7 @@
                       <div class="col-4 scores text-center relative top-relative-15">
                         <span class="text_bold winner score">105</span>
                         <span class="text_bold middeler">:</span>
-                        <span class="text_bold score">99</span>
+                        <span class="text_bold loser score">99</span>
                         <div class="news-detail-1 text-center">
                           <span>home</span>
                         </div>
@@ -414,7 +513,7 @@
                       <div class="col-4 scores text-center relative top-relative-15">
                         <span class="text_bold winner score">105</span>
                         <span class="text_bold middeler">:</span>
-                        <span class="text_bold score">99</span>
+                        <span class="text_bold loser score">99</span>
                         <div class="news-detail-1 text-center">
                           <span>home</span>
                         </div>
@@ -446,7 +545,7 @@
                   </div>
                   <div class="col-md-5 col-lg-7 pr-0">
                     <h4 class="heading-style-3 mr-bt-0 font-size-5">خبر جدیدتر</h4>
-                    <span class="font-size-2"> 5 روز گذشته</span>
+                    <span class="span_size"> 5 روز گذشته</span>
                   </div>
                   <div class="col-12 text">
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی </p>
@@ -464,7 +563,7 @@
                   </div>
                   <div class="col-md-5 col-lg-7 pr-0">
                     <h4 class="heading-style-3 mr-bt-0 font-size-5">خبر جدیدتر</h4>
-                    <span class="font-size-2"> 5 روز گذشته</span>
+                    <span class="span_size"> 5 روز گذشته</span>
                   </div>
                   <div class="col-12 text">
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی </p>
@@ -493,7 +592,7 @@
                           <p class="font-size-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی </p>
                         </div>
                         <div class="col-12 referto">
-                          <p class="font-size-4"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</a></p>
+                          <p class="span_size"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</a></p>
                         </div>
                       </div>
                       <hr>
@@ -513,7 +612,7 @@
                           <p class="font-size-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی </p>
                         </div>
                         <div class="col-12 referto">
-                          <p class="font-size-4"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</a></p>
+                          <p class="span_size"><a href="#">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</a></p>
                         </div>
                       </div>
                     </div>
@@ -529,210 +628,124 @@
               <div id="owl-two" class="owl-carousel owl-theme d-none d-md-block d-lg-block d-xl-block">
                 <div class="item">
                   <div class="row">
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                    <div class="col-md-6 col-lg-6 padding-right">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 padding-left">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-4 padding-right">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-4 padding-left">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
+                      </a>
+                    </div>
+
                   </div>
                 </div>
                 <div class="item">
                   <div class="row">
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                    <div class="col-md-6 col-lg-6 padding-right">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 padding-left">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-4 padding-right">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-4 padding-left">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <div class="caption">
+                            <div class="thumbnail-content">
+                              <span class="date">12 اردیبهشت 97</span>
+                              <span class="commends">0 نظرات</span>
+                              <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
+                            </div>
                           </div>
+                          <img src="assets/img/thumb/bio2.jpg" alt="...">
                         </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
-                    <a href="#" class="col-md-6 col-lg-6 mt-4">
-                      <div class="thumbnail">
-                        <div class="caption">
-                          <div class="thumbnail-content">
-                            <span class="date">12 اردیبهشت 97</span>
-                            <span class="commends">0 نظرات</span>
-                            <p>برای مشاهده این گالری با انتخاب مشاهده گالری ها به فهرست گالری ها بروید.</p>
-                          </div>
-                        </div>
-                        <img src="assets/img/thumb/bio2.jpg" alt="...">
-                      </div>
-                    </a>
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -802,70 +815,201 @@
             <div class="border-box mt-4 relative">
               <h2 class="heading-style-4 border-box-title">مطالب ویژه</h2>
               <hr class="line_1">
-              <ul class="list-inline sa_border_box_2_menu">
-                <li class="list-inline-item"><a href="#">مسابقات</a></li>
-                <li class="list-inline-item"><a href="#">خبر</a></li>
-                <li class="list-inline-item"><a href="#">آموزش</a></li>
+              <ul class="nav nav-tabs sa_border_box_2_menu" id="myTab_2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">آموزش</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">طراحی</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">مقاله</a>
+                </li>
               </ul>
-              <div class="row">
-                <div class="col-lg-7">
-                  <img class="img-responsive width-full rounded " src="assets/img/thumb/gallary.jpg" alt="">
-                </div>
-                <div class="col-lg-5">
-                  <h2 class="heading-style-1 mb-2">عنوان</h2>
-                  <span class="mr-3">5 روز گذشته</span>
-                  <span> 5 نظرات</span>
-                  <p class="text-justify mt-4 text_bold">لــورم ایپســوم متــن ســاختگی بــا تولیــد ســادگی نامفهـوم از صنعـت چـاپ و بـا اسـتفاده از طراحـان گرافیـک اسـت. چاپگرهـا و متـون بلکـه روزنامـه و مجلــه در ســتون و ســطرآنچنان کــه لازم است
-                  </p>
-                </div>
-              </div>
-              <div class="row mt-3 sa_other_new_news">
-                <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="tab-content" id="myTabContent_2">
+                <div class="tab-pane px-4 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                    <div class="col-lg-7">
+                      <img class="img-responsive width-full rounded " src="assets/img/thumb/gallary.jpg" alt="">
                     </div>
-                    <div class="col-lg-8">
-                      <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
-                      <span class="span_size"> 5 روز گذشته</span>
+                    <div class="col-lg-5">
+                      <h2 class="heading-style-1 mb-2">اولین</h2>
+                      <span class="mr-3">5 روز گذشته</span>
+                      <span> 5 نظرات</span>
+                      <p class="text-justify mt-3 text_lighter">لــورم ایپســوم متــن ســاختگی بــا تولیــد ســادگی نامفهـوم از صنعـت چـاپ و بـا اسـتفاده از طراحـان گرافیـک اسـت. چاپگرهـا و متـون بلکـه روزنامـه و مجلــه در ســتون و ســطرآنچنان کــه لازم است
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-3 sa_other_new_news">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="tab-pane px-4 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                    <div class="col-lg-7">
+                      <img class="img-responsive width-full rounded " src="assets/img/thumb/gallary.jpg" alt="">
                     </div>
-                    <div class="col-lg-8">
-                      <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
-                      <span class="span_size"> 5 روز گذشته</span>
+                    <div class="col-lg-5">
+                      <h2 class="heading-style-1 mb-2">دومین</h2>
+                      <span class="mr-3">5 روز گذشته</span>
+                      <span> 5 نظرات</span>
+                      <p class="text-justify mt-4 text_lighter">لــورم ایپســوم متــن ســاختگی بــا تولیــد ســادگی نامفهـوم از صنعـت چـاپ و بـا اسـتفاده از طراحـان گرافیـک اسـت. چاپگرهـا و متـون بلکـه روزنامـه و مجلــه در ســتون و ســطرآنچنان کــه لازم است
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-3 sa_other_new_news">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 mt-3">
+                <div class="tab-pane px-4 fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                    <div class="col-lg-7">
+                      <img class="img-responsive width-full rounded " src="assets/img/thumb/gallary.jpg" alt="">
                     </div>
-                    <div class="col-lg-8">
-                      <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
-                      <span class="span_size"> 5 روز گذشته</span>
+                    <div class="col-lg-5">
+                      <h2 class="heading-style-1 mb-2">سومین</h2>
+                      <span class="mr-3">5 روز گذشته</span>
+                      <span> 5 نظرات</span>
+                      <p class="text-justify mt-4 text_lighter">لــورم ایپســوم متــن ســاختگی بــا تولیــد ســادگی نامفهـوم از صنعـت چـاپ و بـا اسـتفاده از طراحـان گرافیـک اسـت. چاپگرهـا و متـون بلکـه روزنامـه و مجلــه در ســتون و ســطرآنچنان کــه لازم است
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 mt-3">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                  <div class="row mt-3 sa_other_new_news">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-lg-8">
-                      <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
-                      <span class="span_size"> 5 روز گذشته</span>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 mt-3">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <a href="#"><img class="width-full" src="assets/img/thumb/bio2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-lg-8">
+                          <h4 class="heading-style-3 mr-bt-0">خبر جدیدتر</h4>
+                          <span class="span_size"> 5 روز گذشته</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
 
             <div class="sa_divider_image mt-4">
               <h1 class="heading-style-3 text">دیدن مسابقات فوتبال آنلاین</h1>
@@ -874,7 +1018,7 @@
             <div class="border-box mt-4 relative">
               <h2 class="heading-style-4 border-box-title">مطالب ویژه</h2>
               <hr class="line_1">
-              <div class="row mt-3 sa_other_new_news">
+              <div class="row mt-3 sa_other_new_news py-5 px-5">
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                   <div class="row">
                     <div class="col-12">
@@ -919,8 +1063,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 mt-4">
-                  <ul class="pagination sa_pagnination_number_1 pagination-lg">
+                <div class="col-1 col-sm-1 col-md-2"></div>
+                <div class="col-10 col-sm-10 col-md-8 mt-4">
+                  <ul class="pagination sa_pagnination_number_1">
                     <li class="page-item active">
                       <a class="page-link" href="#">1</a>
                     </li>
@@ -941,6 +1086,7 @@
                     </li>
                   </ul>
                 </div>
+                <div class="col-1 col-sm-1 col-md-2"></div>
               </div>
             </div>
           </div>

@@ -9524,19 +9524,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .rtl .pl-4,
 .rtl .px-4 {
-  padding-left: 0 !important;
   padding-right: 1.5rem !important;
 }
 
 .rtl .pr-5,
 .rtl .px-5 {
-  padding-right: 0 !important;
   padding-left: 3rem !important;
 }
 
 .rtl .pl-5,
 .rtl .px-5 {
-  padding-left: 0 !important;
   padding-right: 3rem !important;
 }
 

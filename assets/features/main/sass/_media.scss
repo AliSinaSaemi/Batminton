@@ -37,12 +37,33 @@ $min_1200px: '(min-width: 1200px)';
   .header-one {
     display: none;
   }
+  .thumbnail {
+    img {
+      opacity: .3;
+    }
+    cursor: pointer;
+    .caption {
+      .info-news {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 @media #{$min_768px} {
   .cssmenu,
   .sa-header-button {
     display: none;
+  }
+  .main-landing {
+    #owl-two {
+      .padding-right {
+        padding-right: 55px;
+      }
+      .padding-left {
+        padding-left: 55px;
+      }
+    }
   }
 }
 
@@ -64,6 +85,16 @@ $min_1200px: '(min-width: 1200px)';
       font-size: 60px;
       top: -15px;
       left: 6px;
+    }
+  }
+  .latest-matches-1 {
+    .loser {
+      &:before {
+        left: -4px;
+      }
+      &:after {
+        left: 8px;
+      }
     }
   }
 }
@@ -140,6 +171,18 @@ $min_1200px: '(min-width: 1200px)';
       top: -40px;
       right: 28px;
     }
+    .loser:after {
+      font-size: 30px;
+      top: -24px;
+      left: 52px;
+    }
+    .loser:before {
+      font-size: 24px;
+      width: 83px;
+      height: 35px;
+      top: -40px;
+      left: 19px;
+    }
   }
   .news-detail-1 {
     span {
@@ -166,6 +209,7 @@ $min_1200px: '(min-width: 1200px)';
       margin-bottom: 25px !important;
       a {
         font-size: 35px;
+        color: #bdbdbd !important;
       }
     }
   }
@@ -174,16 +218,28 @@ $min_1200px: '(min-width: 1200px)';
 @media #{$max_768px} {
   .latest-matches-1 {
     .winner:before {
-      font-size: 24px;
-      width: 83px;
-      height: 35px;
-      top: -29px;
+      font-size: 20px;
+      width: 70px;
+      height: 30px;
+      top: -23px;
       right: 5px;
     }
     .winner:after {
       font-size: 30px;
       top: -13px;
-      right: 37px;
+      right: 30px;
+    }
+    .loser:before {
+      font-size: 20px;
+      width: 70px;
+      height: 30px;
+      top: -23px;
+      left: 5px;
+    }
+    .loser:after {
+      font-size: 30px;
+      top: -13px;
+      left: 30px;
     }
     .scores {
       top: 30px;
@@ -207,6 +263,22 @@ $min_1200px: '(min-width: 1200px)';
       }
     }
   }
+  .px-4,
+  .py-4,
+  .py-4.px-4 {
+    padding: 0 !important;
+  }
+  .px-5,
+  .py-5,
+  .py-5.px-5 {
+    padding: 0 !important;
+  }
+  #myTabContent_2 {
+    .tab-pane {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
 }
 
 @media #{$max_576px} {
@@ -228,6 +300,42 @@ $min_1200px: '(min-width: 1200px)';
       p {
         font-size: 16px;
       }
+    }
+  }
+  .main-landing {
+    .sa_border_box_2_menu {
+      font-size: 12px;
+      top: 12px;
+      left: 0px;
+      li {
+        margin-right: 0;
+      }
+    }
+  }
+  .latest-matches-1 {
+    .winner:before {
+      font-size: 16px;
+      width: 50px;
+      height: 25px;
+      top: -18px;
+      right: 13px;
+    }
+    .winner:after {
+      font-size: 30px;
+      top: -13px;
+      right: 30px;
+    }
+    .loser:before {
+      font-size: 16px;
+      width: 50px;
+      height: 25px;
+    top: -18px;
+    left: 13px;
+    }
+    .loser:after {
+      font-size: 30px;
+      top: -13px;
+      left: 30px;
     }
   }
 }

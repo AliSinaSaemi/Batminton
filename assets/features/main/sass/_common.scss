@@ -101,17 +101,28 @@ hr.line_1 {
     }
   }
   img {
-    opacity: .2;
+    opacity: .8;
     transform: scale(1.2, 1.2);
     transition: .35s;
     position: relative;
     width: 100%;
   }
+  &:hover {
+    img {
+      opacity: .3;
+    }
+    cursor: pointer;
+    .caption {
+      .info-news {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .sa_divider_image {
   background-image: url(../../../img/bg/Arabic_carpet.jpg);
-  background-attachment: fixed;
+  background-attachment: inherit;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -126,7 +137,7 @@ hr.line_1 {
 
 .sa_pagnination_number_1 {
   flex-direction: row-reverse;
-  width: 417px;
+  width: 70%;
   margin: 10px auto;
   .page-item {
     .page-link {
@@ -185,6 +196,12 @@ hr.line_1 {
       }
     }
   }
+}
+
+span.span_size {
+  font-weight: 300;
+  position: relative;
+  top: -5px;
 }
 
 .bg-red {
@@ -250,21 +267,15 @@ hr.line_1 {
       margin-top: 15px;
     }
   }
-  .winner {
+  .common_winner_loser {
     &:before {
-      content: "WIN";
       display: block;
-      font-size: 9px;
       text-align: center;
       position: absolute;
-      width: 30px;
-      height: 15px;
-      padding-top: 3px;
-      background-color: #2098d1;
       color: #fff;
       border-radius: 0;
       top: -15px;
-      right: 7px;
+      font-size: 9px;
     }
     &:after {
       content: "\f0d7";
@@ -273,9 +284,43 @@ hr.line_1 {
       font-size: 12px;
       text-align: center;
       position: absolute;
+    }
+  }
+  .winner {
+    &:before {
+      content: "WIN";
+      width: 30px;
+      height: 15px;
+      padding-top: 3px;
+      background-color: #2098d1;
+      right: 6px;
+    }
+    &:after {
       color: #2098d1;
       top: -7px;
       right: 18px;
+    }
+    @extend .common_winner_loser;
+  }
+  .loser {
+    &:before {
+      content: "LOSE";
+      width: 30px;
+      height: 15px;
+      padding-top: 3px;
+      background-color: #ff3232;
+      left: 4px;
+    }
+    &:after {
+      color: #ff3232;
+      top: -7px;
+      left: 16px;
+    }
+    &:before {
+      @extend .common_winner_loser;
+    }
+    &:after {
+      @extend .common_winner_loser;
     }
   }
 }
@@ -302,7 +347,7 @@ hr.line_1 {
       margin-top: 10px;
     }
     &:before {
-      content: "``";
+      content: "\201c";
       display: block;
       font-size: 72px;
       position: absolute;
@@ -314,7 +359,7 @@ hr.line_1 {
   }
   .text {
     color: #a7a7a7;
-    font-size: 11px;
+    font-size: 13px;
     p {
       margin-top: 5px;
       text-align: justify;
@@ -352,11 +397,16 @@ hr.line_1 {
       a {
         color: #15b095;
         opacity: 1;
+        font-weight: 500;
         transition: .5s;
         &:hover {
           opacity: .7;
         }
       }
     }
+  }
+  span.span_size {
+    top: 5px;
+    font-size: 10px;
   }
 }
