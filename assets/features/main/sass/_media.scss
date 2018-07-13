@@ -442,4 +442,43 @@ $min_1200px: '(min-width: 1200px)';
 }
 
 
+/* player */
+
+@media #{$max_1200px} {
+  .testimonial {
+    .profile_special {
+      padding: 5px 5px;
+    }
+  }
+}
+
+@media #{$max_992px} {
+  .testimonial {
+    .gradient_bg {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+@media #{$max_576px} {
+  .banner_2 {
+    h1 {
+      font-size: 20px;
+      margin: 0 20px;
+    }
+  }
+  .testimonial {
+    .profile {
+      .text {
+        font-size: 12px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
 /* footer */

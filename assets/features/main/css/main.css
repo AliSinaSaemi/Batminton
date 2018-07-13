@@ -1304,6 +1304,45 @@ span.span_size {
 .testimonial.managers #owl-four .owl-dots .owl-dot:hover span {
   background: #fbde5d; }
 
+.banner_2.players h1 {
+  color: #2a343d;
+  text-shadow: none; }
+
+.testimonial .profile.player {
+  border-bottom-width: 10px;
+  border-bottom-style: solid; }
+  .testimonial .profile.player .profile_box {
+    background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
+.testimonial .profile.special.player {
+  border-bottom: none; }
+  .testimonial .profile.special.player .profile_box {
+    border: 1px solid #008AED;
+    background: none !important; }
+.testimonial .profile_special.player {
+  background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
+.testimonial .gradient_bg {
+  margin-right: 30px;
+  margin-left: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%);
+  padding-bottom: 10px; }
+  .testimonial .gradient_bg .profile {
+    border: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+    margin-left: 0; }
+
+.testimonial.players #owl-four .owl-nav [class*=owl-] {
+  background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
+.testimonial.players #owl-four .owl-dots .owl-dot.active span,
+.testimonial.players #owl-four .owl-dots .owl-dot:hover span {
+  background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
+.testimonial.players #owl-four .owl-dots .owl-dot.active span,
+.testimonial.players #owl-four .owl-dots .owl-dot:hover span {
+  background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
+
 footer {
   background-color: #2a343d;
   padding: 50px 0; }
@@ -1584,6 +1623,23 @@ footer {
     margin-left: 30px; }
   .testimonial .profile_special {
     margin: 0 30px; } }
+/* player */
+@media (max-width: 1200px) {
+  .testimonial .profile_special {
+    padding: 5px 5px; } }
+@media (max-width: 992px) {
+  .testimonial .gradient_bg {
+    margin-right: 0;
+    margin-left: 0; } }
+@media (max-width: 576px) {
+  .banner_2 h1 {
+    font-size: 20px;
+    margin: 0 20px; }
+
+  .testimonial .profile .text {
+    font-size: 12px; }
+  .testimonial .profile h3 {
+    font-size: 14px; } }
 /* footer */
 
 /*# sourceMappingURL=main.css.map */
