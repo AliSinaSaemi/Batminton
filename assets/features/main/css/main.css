@@ -704,6 +704,113 @@ span.span_size {
   top: 5px;
   font-size: 10px; }
 
+.banner_2 {
+  padding: 85px 0; }
+  .banner_2 h1 {
+    text-align: center;
+    margin: 0 !important; }
+
+.bg_shadow_1 {
+  background: -moz-linear-gradient(0% 50% 0deg, #1b1d21 0%, #2c313b 36.14%);
+  background: -webkit-linear-gradient(0deg, #1b1d21 0%, #2c313b 36.14%);
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, #1b1d21), color-stop(0.3614, #2c313b));
+  background: -o-linear-gradient(0deg, #1b1d21 0%, #2c313b 36.14%);
+  background: -ms-linear-gradient(0deg, #1b1d21 0%, #2c313b 36.14%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1B1D21', endColorstr='#2C313B' ,GradientType=0)";
+  background: linear-gradient(90deg, #1b1d21 0%, #2c313b 36.14%); }
+
+.bg_shadow_2 {
+  background: -moz-linear-gradient(0% 50% 0deg, #008aed 0%, #1be3c8 100%);
+  background: -webkit-linear-gradient(0deg, #008aed 0%, #1be3c8 100%);
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, #008aed), color-stop(1, #1be3c8));
+  background: -o-linear-gradient(0deg, #008aed 0%, #1be3c8 100%);
+  background: -ms-linear-gradient(0deg, #008aed 0%, #1be3c8 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#008AED', endColorstr='#1BE3C8' ,GradientType=0)";
+  background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
+
+.testimonial {
+  padding-bottom: 120px;
+  padding-top: 30px; }
+  .testimonial .profile {
+    padding: 20px;
+    margin: 0 30px;
+    padding-top: 75px;
+    border-radius: 5px;
+    margin-top: 125px;
+    position: relative; }
+    .testimonial .profile h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      margin-top: 5px;
+      font-size: 12px;
+      font-weight: 300; }
+    .testimonial .profile .text {
+      text-align: justify;
+      font-size: 10px;
+      font-weight: lighter;
+      margin-bottom: 30px; }
+    .testimonial .profile .profile_box {
+      border-radius: 40px 0px;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      left: 0;
+      margin: 0 auto;
+      top: -60px;
+      right: 0; }
+  .testimonial .profile.special {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 5px; }
+    .testimonial .profile.special .profile_box {
+      background: transparent;
+      border-radius: 50%; }
+    .testimonial .profile.special .text {
+      text-align: justify;
+      font-size: 10px;
+      font-weight: lighter;
+      margin-bottom: 0; }
+  .testimonial .profile_special {
+    margin: 0 30px;
+    padding: 5px 35px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .testimonial .profile_special .icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      border: 1px solid #fff; }
+
+#owl-four {
+  position: relative; }
+  #owl-four .owl-nav {
+    margin-top: 10px;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 160px; }
+    #owl-four .owl-nav [class*=owl-] {
+      color: #FFF;
+      padding: 15px 20px !important;
+      border-radius: 50%;
+      font-size: 25px;
+      text-decoration: none;
+      position: absolute;
+      border: none !important; }
+      #owl-four .owl-nav [class*=owl-]:focus {
+        border: none !important; }
+    #owl-four .owl-nav .owl-prev {
+      right: 0; }
+    #owl-four .owl-nav .owl-next {
+      left: 0; }
+  #owl-four .owl-dots {
+    margin-top: 10px; }
+  #owl-four .owl-stage-outer {
+    z-index: 1; }
+
 /***************************** 
 
           HEADER
@@ -1166,6 +1273,37 @@ span.span_size {
   padding-right: 10px;
   padding-left: 10px; }
 
+.banner_2.managers h1 {
+  color: #fff;
+  text-shadow: 9px 6px 6px #9696964a; }
+
+.testimonial .profile.manager {
+  border-bottom: 10px solid #FBDE5D; }
+  .testimonial .profile.manager .profile_box {
+    background: #fbde5d; }
+.testimonial .profile.special.manager {
+  border-bottom: none; }
+  .testimonial .profile.special.manager .profile_box {
+    border: 1px solid #fbde5d;
+    background-color: transparent; }
+.testimonial .profile_special.manager {
+  background: #fbde5d;
+  background: -moz-linear-gradient(-45deg, #fbde5d 0%, #fce69c 38%, #fce17e 60%, #fbde5d 72%, #fbde5d 85%, #fbde5d 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #fbde5d), color-stop(38%, #fce69c), color-stop(60%, #fce17e), color-stop(72%, #fbde5d), color-stop(85%, #fbde5d), color-stop(100%, #fbde5d));
+  background: -webkit-linear-gradient(-45deg, #fbde5d 0%, #fce69c 38%, #fce17e 60%, #fbde5d 72%, #fbde5d 85%, #fbde5d 100%);
+  background: -o-linear-gradient(-45deg, #fbde5d 0%, #fce69c 38%, #fce17e 60%, #fbde5d 72%, #fbde5d 85%, #fbde5d 100%);
+  background: -ms-linear-gradient(-45deg, #fbde5d 0%, #fce69c 38%, #fce17e 60%, #fbde5d 72%, #fbde5d 85%, #fbde5d 100%);
+  background: linear-gradient(135deg, #fbde5d 0%, #fce69c 38%, #fce17e 60%, #fbde5d 72%, #fbde5d 85%, #fbde5d 100%); }
+
+.testimonial.managers #owl-four .owl-nav [class*=owl-] {
+  background: #fbde5d; }
+.testimonial.managers #owl-four .owl-dots .owl-dot.active span,
+.testimonial.managers #owl-four .owl-dots .owl-dot:hover span {
+  background: #fbde5d; }
+.testimonial.managers #owl-four .owl-dots .owl-dot.active span,
+.testimonial.managers #owl-four .owl-dots .owl-dot:hover span {
+  background: #fbde5d; }
+
 footer {
   background-color: #2a343d;
   padding: 50px 0; }
@@ -1429,6 +1567,23 @@ footer {
     font-size: 17px; }
   .banner-content p {
     font-size: 11px; } }
+/* managers */
+@media (max-width: 992px) {
+  .testimonial .profile {
+    margin-right: 0;
+    margin-left: 0; }
+  .testimonial .profile_special {
+    margin: 0;
+    padding: 8px; }
+    .testimonial .profile_special .icon {
+      width: 40px;
+      height: 40px; } }
+@media (max-width: 768px) {
+  .testimonial .profile {
+    margin-right: 30px;
+    margin-left: 30px; }
+  .testimonial .profile_special {
+    margin: 0 30px; } }
 /* footer */
 
 /*# sourceMappingURL=main.css.map */
