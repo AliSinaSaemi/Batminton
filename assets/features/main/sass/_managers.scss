@@ -6,17 +6,9 @@
 }
 
 .testimonial {
-  .profile.manager {
-    border-bottom: 10px solid #FBDE5D;
+  .profile-item.manager {
     .profile_box {
       background: #fbde5d;
-    }
-  }
-  .profile.special.manager {
-    border-bottom: none;
-    .profile_box {
-      border: 1px solid #fbde5d;
-      background-color: transparent;
     }
   }
   .profile_special.manager {
@@ -32,20 +24,20 @@
 
 .testimonial.managers {
   #owl-four {
-  .owl-nav {
-    [class*=owl-] {
+    .owl-nav {
+      [class*=owl-] {
+        background: #fbde5d;
+      }
+    }
+    .owl-dots {
+      .owl-dot.active span,
+      .owl-dot:hover span {
+        background: #fbde5d;
+      }
+    }
+    .owl-dots .owl-dot.active span,
+    .owl-dots .owl-dot:hover span {
       background: #fbde5d;
     }
   }
-  .owl-dots {
-    .owl-dot.active span,
-    .owl-dot:hover span {
-      background: #fbde5d;
-    }
-  }
-  .owl-dots .owl-dot.active span,
-  .owl-dots .owl-dot:hover span {
-    background: #fbde5d;
-  }
-}
 }

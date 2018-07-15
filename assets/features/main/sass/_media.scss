@@ -410,20 +410,29 @@ $min_1200px: '(min-width: 1200px)';
 }
 
 
-/* managers */
+/* managers */ /* player */
 
 @media #{$max_992px} {
   .testimonial {
-    .profile {
-      margin-right: 0;
-      margin-left: 0;
-    }
-    .profile_special {
+    .profile-platform {
       margin: 0;
-      padding: 8px;
-      .icon {
-        width: 40px;
-        height: 40px;
+      .background-profile {
+        .profile {
+          .text {
+            padding-bottom: 15px !important;
+          }
+          .profile_box {
+            border-radius: 50% !important;
+          }
+        }
+      }
+      .profile_special {
+        height: 55px;
+        a {
+          font-size: 30px;
+          top: 10px;
+          opacity: 1;
+        }
       }
     }
   }
@@ -431,32 +440,9 @@ $min_1200px: '(min-width: 1200px)';
 
 @media #{$max_768px} {
   .testimonial {
-    .profile {
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-    .profile_special {
+    .profile-platform {
       margin: 0 30px;
-    }
-  }
-}
-
-
-/* player */
-
-@media #{$max_1200px} {
-  .testimonial {
-    .profile_special {
-      padding: 5px 5px;
-    }
-  }
-}
-
-@media #{$max_992px} {
-  .testimonial {
-    .gradient_bg {
-      margin-right: 0;
-      margin-left: 0;
+      margin-top: 130px;
     }
   }
 }
@@ -468,17 +454,4 @@ $min_1200px: '(min-width: 1200px)';
       margin: 0 20px;
     }
   }
-  .testimonial {
-    .profile {
-      .text {
-        font-size: 12px;
-      }
-      h3 {
-        font-size: 14px;
-      }
-    }
-  }
 }
-
-
-/* footer */

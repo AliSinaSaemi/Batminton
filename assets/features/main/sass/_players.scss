@@ -5,7 +5,8 @@
   }
 }
 
-.testimonial {
+
+/*.testimonial {
   .profile.player {
     border-bottom-width: 10px;
     border-bottom-style: solid;
@@ -37,6 +38,17 @@
       margin-right: 0;
       margin-left: 0;
     }
+  }
+}*/
+
+.testimonial {
+  .profile-item.player {
+    .profile_box {
+      background: linear-gradient(90deg, rgba(0, 138, 237, 1) 0%, rgba(27, 227, 200, 1) 100%);
+    }
+  }
+  .profile_special.player {
+    background: linear-gradient(90deg, rgba(0, 138, 237, 1) 0%, rgba(27, 227, 200, 1) 100%);
   }
 }
 
