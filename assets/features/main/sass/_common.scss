@@ -314,6 +314,7 @@ span.span_size {
     &:after {
       color: #ff3232;
       top: -7px;
+      top: -7px;
       left: 16px;
     }
     &:before {
@@ -417,6 +418,39 @@ span.span_size {
     margin: 0 !important;
   }
   padding: 85px 0;
+}
+
+.banner_3 {
+  padding: 80px 0;
+  text-align: center;
+  background-color: rgba(40, 44, 47, 0.6);
+  position: relative;
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .location {
+    font-size: 20px;
+    margin-bottom: 20px;
+    span,
+    a {
+      color: #fff;
+    }
+    a.active {
+      color: #e2af23;
+    }
+  }
+  &:after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .bg_shadow_1 {
@@ -568,5 +602,188 @@ span.span_size {
   }
   .owl-stage-outer {
     z-index: 1;
+  }
+}
+
+.border-box-2 {
+  border-radius: 5px;
+  border: 1px solid #bababa;
+}
+
+.header-section {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    .col-6:first-child {
+      background-color: #15b095;
+      h3 {
+        color: #fff;
+        margin-bottom: 0;
+      }
+      &:after {}
+    }
+    .col-6:last-child {
+      background-color: #e7eaf0;
+      &:after {
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 44px 52px 0;
+        border-color: transparent #15b095 transparent transparent;
+      }
+    }
+  }
+}
+
+.news-section {
+  padding: 100px 0;
+  .border-box-2 {
+    .news-content {
+      padding-left: 40px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .title {
+      color: #e2af23;
+      font-weight: 700;
+    }
+    .date {
+      color: #bababa;
+      font-size: 11px;
+    }
+    p.text {
+      font-size: 13px;
+      color: #949494;
+      line-height: 20px;
+      text-align: justify;
+      margin-top: 15px;
+    }
+    img.news-image {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    hr {
+      width: 100%;
+      margin-top: 50px;
+      right: -15px;
+      border-color: #bababa;
+      position: absolute;
+      &.no_right {
+        right: 0;
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: 5px;
+      > div {
+        margin-left: 20px;
+      }
+      .user-input {
+        margin-top: 7px;
+        i,
+        a {
+          font-size: 23px;
+        }
+        .count {
+          color: #bababa;
+          font-size: 13px;
+          margin-right: 5px;
+          margin-top: 3px;
+        }
+        a.comment {
+          position: relative;
+          bottom: 3px;
+        }
+        a.comment,
+        i.fa-eye {
+          color: #ababab;
+        }
+        a.like {
+          color: #ababab;
+          &.liked {
+            color: #ff2828;
+          }
+        }
+      }
+      .profile {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid #000;
+          margin-bottom: 5px;
+        }
+      }
+      .like,
+      .comment,
+      .seen-count {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  .pagination {
+    margin-right: 15px;
+    margin-top: 15px;
+    li {
+      margin-left: 10px;
+      a {
+        font-size: 13px;
+        padding: 7px;
+        border-radius: 5px;
+        color: #000;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+      &.active {
+        .page-link {
+          z-index: 1;
+          color: #fff;
+          background-color: #15b095;
+          border-color: #15b095;
+        }
+      }
+    }
+  }
+  .btn_2 {
+    padding: 5px 10px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    transition: .4s;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+  .new-news {
+    .item {
+      padding: 10px 30px;
+      img {
+        border-radius: 5px;
+      }
+      h3 {
+        font-size: 11px;
+        margin: 0;
+        line-height: 18px;
+      }
+      .text {
+        margin: 0;
+        font-size: 10px;
+      }
+      .date {
+        font-size: 10px;
+        position: relative;
+        top: -5px;
+      }
+    }
   }
 }

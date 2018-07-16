@@ -1,0 +1,18 @@
+.banner_3 {
+  &:after {
+    background-image: url(../../../img/bg/Arabic_carpet.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.news-section {
+  .border-box-2 {
+    .btn_2 {
+      position: relative;
+      top: 15px;
+    }
+  }
+}
