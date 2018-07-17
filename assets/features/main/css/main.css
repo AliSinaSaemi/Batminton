@@ -972,6 +972,16 @@ span.span_size {
     .news-section .btn_2:hover {
       background-color: #000;
       color: #fff; }
+  .news-section .btn_1 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #e2af23;
+    transition: .4s;
+    color: #fff;
+    background-color: #e2af23; }
+    .news-section .btn_1:hover {
+      background-color: #fff;
+      color: #e2af23; }
   .news-section .new-news .item {
     padding: 10px 30px; }
     .news-section .new-news .item img {
@@ -987,6 +997,45 @@ span.span_size {
       font-size: 10px;
       position: relative;
       top: -5px; }
+  .news-section .next-match h4 {
+    margin: 0 auto;
+    font-size: 14px; }
+  .news-section .next-match .date-match {
+    margin: 0px auto;
+    color: #e2af23;
+    font-size: 11px;
+    position: relative;
+    font-weight: 700;
+    top: -8px; }
+  .news-section .next-match .versous {
+    margin-top: 40px;
+    font-weight: bold; }
+  .news-section .next-match .start-at {
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 13px; }
+  .news-section .next-match .time-left .time {
+    font-size: 25px;
+    display: flex;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 175px; }
+    .news-section .next-match .time-left .time span {
+      margin: 0 5px; }
+  .news-section .next-match .time-left .time-letters ul {
+    margin-top: -27px;
+    margin-bottom: 5px; }
+    .news-section .next-match .time-left .time-letters ul li {
+      margin-left: 20px;
+      margin-right: 0px; }
+      .news-section .next-match .time-left .time-letters ul li:last-child {
+        margin-left: 0; }
+      .news-section .next-match .time-left .time-letters ul li span {
+        font-size: 12px;
+        margin-right: -5px;
+        color: #9c9c9c; }
 
 /***************************** 
 
@@ -1536,6 +1585,14 @@ span.span_size {
 .news-section .border-box-2 .btn_2 {
   position: relative;
   top: 15px; }
+.news-section .next-match .btn_1 {
+  margin: 0 auto;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  width: 130px; }
+.news-section .next-match hr {
+  bottom: 48px; }
 
 footer {
   background-color: #2a343d;
