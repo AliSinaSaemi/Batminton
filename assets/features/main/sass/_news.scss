@@ -1,7 +1,6 @@
 .banner_3 {
   &:after {
     background-image: url(../../../img/bg/Arabic_carpet.jpg);
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -23,7 +22,7 @@
       text-align: center;
       width: 130px;
     }
-    hr {
+    hr.hr-divider-1 {
       bottom: 48px;
     }
   }

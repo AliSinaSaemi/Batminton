@@ -754,29 +754,6 @@ span.span_size {
       }
     }
   }
-  .btn_2 {
-    padding: 5px 10px;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 5px;
-    transition: .4s;
-    &:hover {
-      background-color: #000;
-      color: #fff;
-    }
-  }
-  .btn_1 {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #e2af23;
-    transition: .4s;
-    color: #fff;
-    background-color: #e2af23;
-    &:hover {
-      background-color: #fff;
-      color: #e2af23;
-    }
-  }
   .new-news {
     .item {
       padding: 10px 30px;
@@ -873,6 +850,33 @@ span.span_size {
   }
 }
 
+.btn_2 {
+  padding: 5px 10px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: .4s;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.btn_1 {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #e2af23;
+  transition: .4s;
+  color: #fff;
+  background-color: #e2af23;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff;
+    color: #e2af23;
+  }
+}
+
 .cutomized-form-radio {
   display: block;
   position: relative;
@@ -884,51 +888,44 @@ span.span_size {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.cutomized-form-radio input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  height: 16px;
-  width: 16px;
-  background-color: #eee;
-  border: 1px solid #d2d2d2;
-  border-radius: 50%;
-}
-
-.cutomized-form-radio:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-.cutomized-form-radio input:checked ~ .checkmark {
-  background-color: #eeeeee;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.cutomized-form-radio input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.cutomized-form-radio .checkmark:after {
-  top: 1px;
-  left: 0.5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #e2af23;
-}
-.cutomized-form-radio .weekly:after {
-  left: 1px;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 1px;
+      left: 0.5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e2af23;
+    }
+  }
+  .weekly:after {
+    left: 1px;
+  }
+  &:hover {
+    input ~ .checkmark {
+      background-color: #ccc;
+    }
+  }
+  input:checked ~ .checkmark {
+    background-color: #eeeeee;
+  }
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
 }
