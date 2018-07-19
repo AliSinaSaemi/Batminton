@@ -683,6 +683,7 @@ span.span_size {
       flex-direction: row;
       position: absolute;
       bottom: 5px;
+      width: 100%;
       > div {
         margin-left: 20px;
       }
@@ -706,11 +707,21 @@ span.span_size {
         i.fa-eye {
           color: #ababab;
         }
-        a.like {
+        button.like {
           color: #ababab;
-          &.liked {
-            color: #ff2828;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          margin-bottom: 15px;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+            text-decoration: none;
+            border: none;
           }
+        }
+        .liked {
+          color: #ff2828 !important;
         }
       }
       .profile {
@@ -739,7 +750,7 @@ span.span_size {
         font-size: 13px;
         padding: 7px;
         border-radius: 5px;
-        color: #000;
+        color: #b7b7b7;
       }
       &:last-child {
         margin-left: 0;

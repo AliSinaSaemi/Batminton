@@ -136,4 +136,22 @@ $('.sa-close-btn').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
 });
 
+/*=======================
+
+      liked or like
+ 
+=======================*/
+
+$(document).ready(function(){
+  $(".like").click(function () {
+    $(this).toggleClass("liked");
+  });
+});
+
+/*=======================
+
+      put comment
+ 
+=======================*/
+
 

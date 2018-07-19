@@ -152,6 +152,22 @@ img.circle {
   border-radius: 50%;
 }
 
+.simple-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #bababa;
+  
+}
+
+.no-smoth {
+  border-radius: 0 !important;
+}
+
+.smoth {
+  border-radius: 5px;
+  
+}
+
 h1,
 h2,
 h3,
@@ -165,6 +181,7 @@ a,
 span,
 strong,
 button,
+textarea,
 em,
 i,
 b,

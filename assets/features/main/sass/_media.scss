@@ -468,6 +468,19 @@ $min_1200px: '(min-width: 1200px)';
   }
 }
 
+@media #{$min_992px} and #{$max_1200px} {
+  .news-section {
+    .border-box-2 {
+      .news-content {
+        .social {
+          bottom: -2px;
+          right: 2px;
+        }
+      }
+    }
+  }
+}
+
 @media #{$max_992px} {
   .news-section {
     .border-box-2 {
@@ -529,6 +542,84 @@ $min_1200px: '(min-width: 1200px)';
       }
       .news-content {
         padding-right: 40px;
+      }
+    }
+  }
+}
+
+
+/* specific news */
+
+@media #{$max_1200px} {
+  .specific-news {
+    .border-box-2 {
+      .social {
+        > div {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$max_768px} {
+  .specific-news {
+    .border-box-2 {
+      .hr-divider-1 {
+        display: block;
+        margin-left: 50px;
+      }
+      .news-content {
+        padding-right: 15px;
+      }
+    }
+    .comments {
+      .commented {
+        ul {
+          li {
+            font-size: 10px;
+          }
+        }
+        p {
+          margin-left: 0
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .specific-news {
+    .border-box-2 {
+      .social {
+        .user-input {
+          a,
+          i {
+            font-size: 16px;
+          }
+          .comment {
+            bottom: 0;
+          }
+          .count {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .unknown-btn {
+      margin-left: -31px;
+    }
+    .specified-news {
+      .social {
+        position: relative;
+        margin: 0 20px;
+        margin-left: 15px;
+        margin-top: 9px;
+        margin-bottom: 15px;
+        .user-input-list {
+          right: 5px;
+          bottom: -45px;
+        }
       }
     }
   }
@@ -612,13 +703,13 @@ $min_1200px: '(min-width: 1200px)';
 @media #{$max_768px} {
   footer {
     .footer-brand {
-    margin-top: 90px;
-    text-align: center;
-}
+      margin-top: 90px;
+      text-align: center;
+    }
     .social-media {
-    left: 0;
-    right: 0;
-}
+      left: 0;
+      right: 0;
+    }
     .no_margin {
       margin-right: 15px;
       margin-left: 15px;
@@ -644,9 +735,9 @@ $min_1200px: '(min-width: 1200px)';
         width: 100%;
       }
     }
-        .navbar-footer {
+    .navbar-footer {
       ul {
-       opacity: 0;
+        opacity: 0;
       }
     }
   }
