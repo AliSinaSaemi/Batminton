@@ -54,6 +54,10 @@ ul {
   padding-right: 0;
 }
 
+.black {
+  color: #000;
+}
+
 .btn {
   &:focus {
     border: 0 !important;
@@ -187,7 +191,7 @@ i,
 b,
 li {
   direction: rtl;
-  font-family: 'IRANSans';
+  font-family: 'IRANSans', 'IRANSans_num_web';
   text-align: right;
 }
 
@@ -197,6 +201,10 @@ li {
 
 .text_bold {
   font-weight: bold;
+}
+
+.faNum {
+      font-family: 'IRANSans_num_web';
 }
 
 .mr-bt-0 {

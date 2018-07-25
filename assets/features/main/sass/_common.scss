@@ -223,7 +223,26 @@ span.span_size {
 
 .social-media-1 {
   ul {
+    padding: 15px;
+    padding-right: 0;
     text-align: center;
+    padding-left: 0;
+    li {
+      margin-left: 30px;
+      font-size: 35px;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+    .instagram {
+      i {
+        background-image: -webkit-linear-gradient(to bottom right, #ffcc00 0%, #cc0066 100%);
+        background-image: linear-gradient(to bottom right, #ffcc00 0%, #cc0066 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
     .youtube {
       color: #ca2323;
     }
@@ -239,13 +258,19 @@ span.span_size {
     .facebook {
       color: #2059a0;
     }
-    .instagram {
-      color: #3195f3;
+    .telegram {
+      color: #009fff;
     }
   }
 }
 
 .latest-matches-1 {
+  .container-fluid {
+    .row {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
   h3 {
     font-size: 13px;
     margin-bottom: -10px;
@@ -294,12 +319,12 @@ span.span_size {
       height: 15px;
       padding-top: 3px;
       background-color: #2098d1;
-      right: 6px;
+      right: 20px;
     }
     &:after {
       color: #2098d1;
       top: -7px;
-      right: 18px;
+      right: 30px;
     }
     @extend .common_winner_loser;
   }
@@ -311,12 +336,14 @@ span.span_size {
       padding-top: 3px;
       background-color: #ff3232;
       left: 4px;
+      opacity: 0;
     }
     &:after {
       color: #ff3232;
       top: -7px;
       top: -7px;
       left: 16px;
+      opacity: 0;
     }
     &:before {
       @extend .common_winner_loser;
@@ -621,6 +648,7 @@ span.span_size {
         color: #fff;
         margin-bottom: 0;
         font-size: 19px;
+        font-weight: 500;
       }
       &:after {}
     }
@@ -643,220 +671,242 @@ span.span_size {
 
 .news-section {
   padding: 100px 0;
-  .border-box-2 {
-    .news-content {
-      padding-left: 40px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+}
+
+.border-box-2 {
+  .news-content {
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .title {
+    color: #e2af23;
+    font-weight: 700;
+  }
+  .date {
+    color: #bababa;
+    font-size: 11px;
+  }
+  p.text {
+    font-size: 13px;
+    color: #949494;
+    line-height: 20px;
+    text-align: justify;
+    margin-top: 15px;
+  }
+  img.news-image {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  hr.hr-divider-1 {
+    width: 100%;
+    margin-top: 50px;
+    right: -15px;
+    border-color: #bababa;
+    position: absolute;
+    &.no_right {
+      right: 0;
     }
-    .title {
-      color: #e2af23;
-      font-weight: 700;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    > div {
+      margin-left: 20px;
     }
-    .date {
-      color: #bababa;
-      font-size: 11px;
-    }
-    p.text {
-      font-size: 13px;
-      color: #949494;
-      line-height: 20px;
-      text-align: justify;
-      margin-top: 15px;
-    }
-    img.news-image {
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
-    hr.hr-divider-1 {
-      width: 100%;
-      margin-top: 50px;
-      right: -15px;
-      border-color: #bababa;
-      position: absolute;
-      &.no_right {
-        right: 0;
+    .user-input {
+      margin-top: 7px;
+      i,
+      a {
+        font-size: 23px;
+      }
+      .count {
+        color: #bababa;
+        font-size: 13px;
+        margin-right: 5px;
+        margin-top: 3px;
+        font-family: 'IRANSans_num_web';
+      }
+      a.comment {
+        position: relative;
+        bottom: 3px;
+      }
+      a.comment,
+      i.fa-eye {
+        color: #ababab;
+      }
+      i.fa-heart {
+        position: absolute;
+        opacity: 0;
+        transition: .4s;
+      }
+      button.like {
+        color: #ababab;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 15px;
+        &:focus {
+          box-shadow: none;
+          outline: none;
+          text-decoration: none;
+          border: none;
+        }
+      }
+      .liked {
+        color: #ff2828 !important;
+        i.fa-heart {
+          opacity: 1
+        }
       }
     }
-    .social {
+    .profile {
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        margin-bottom: 5px;
+      }
+    }
+    .like,
+    .comment,
+    .seen-count {
       display: flex;
       flex-direction: row;
-      position: absolute;
-      bottom: 5px;
-      width: 100%;
-      > div {
-        margin-left: 20px;
-      }
-      .user-input {
-        margin-top: 7px;
-        i,
-        a {
-          font-size: 23px;
-        }
-        .count {
-          color: #bababa;
-          font-size: 13px;
-          margin-right: 5px;
-          margin-top: 3px;
-        }
-        a.comment {
-          position: relative;
-          bottom: 3px;
-        }
-        a.comment,
-        i.fa-eye {
-          color: #ababab;
-        }
-        button.like {
-          color: #ababab;
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-          margin-bottom: 15px;
-          &:focus {
-            box-shadow: none;
-            outline: none;
-            text-decoration: none;
-            border: none;
-          }
-        }
-        .liked {
-          color: #ff2828 !important;
-        }
-      }
-      .profile {
-        img {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: 1px solid #000;
-          margin-bottom: 5px;
-        }
-      }
-      .like,
-      .comment,
-      .seen-count {
-        display: flex;
-        flex-direction: row;
-      }
     }
   }
-  .pagination {
-    margin-right: 15px;
-    margin-top: 15px;
-    li {
-      margin-left: 10px;
-      a {
-        font-size: 13px;
-        padding: 7px;
-        border-radius: 5px;
-        color: #b7b7b7;
-      }
-      &:last-child {
-        margin-left: 0;
-      }
-      &.active {
-        .page-link {
-          z-index: 1;
-          color: #fff;
-          background-color: #15b095;
-          border-color: #15b095;
-        }
-      }
+}
+
+.new-news {
+  .item {
+    padding: 10px 30px;
+    img {
+      border-radius: 5px;
     }
-  }
-  .new-news {
-    .item {
-      padding: 10px 30px;
-      img {
-        border-radius: 5px;
-      }
-      h3 {
-        font-size: 11px;
-        margin: 0;
-        line-height: 18px;
-      }
-      .text {
-        margin: 0;
-        font-size: 10px;
-      }
-      .date {
-        font-size: 10px;
-        position: relative;
-        top: -5px;
-      }
-    }
-  }
-  .next-match {
-    h4 {
-      margin: 0 auto;
-      font-size: 14px;
-    }
-    .date-match {
-      margin: 0px auto;
-      color: #e2af23;
+    h3 {
       font-size: 11px;
+      margin: 0;
+      line-height: 18px;
+    }
+    .text {
+      margin: 0;
+      font-size: 10px;
+    }
+    .date {
+      font-size: 10px;
       position: relative;
-      font-weight: 700;
-      top: -8px;
+      top: -5px;
     }
-    .versous {
-      margin-top: 40px;
-      font-weight: bold;
-    }
-    .start-at {
-      text-align: center;
-      width: 100%;
-      margin-top: 16px;
+  }
+}
+
+.pagination {
+  margin-right: 15px;
+  margin-top: 15px;
+  li {
+    margin-left: 10px;
+    a {
       font-size: 13px;
+      padding: 7px;
+      border-radius: 5px;
+      color: #b7b7b7;
+      font-family: 'IRANSans_num_web';
+      width: 30px;
+      height: 30px;
+      text-align: center;
     }
-    .time-left {
-      .time {
-        font-size: 25px;
-        display: flex;
-        font-weight: bold;
-        margin: 0 auto;
-        margin-top: 0px;
-        width: 175px;
-        span {
-          margin: 0 5px;
-        }
+    &:last-child {
+      margin-left: 0;
+    }
+    &.active {
+      .page-link {
+        z-index: 1;
+        color: #fff;
+        background-color: #15b095;
+        border-color: #15b095;
       }
-      .time-letters {
-        ul {
-          margin-top: -27px;
-          margin-bottom: 5px;
-          li {
-            margin-left: 20px;
-            margin-right: 0px;
-            &:last-child {
-              margin-left: 0;
-            }
-            span {
-              font-size: 12px;
-              margin-right: -5px;
-              color: #9c9c9c;
-            }
+    }
+  }
+}
+
+.next-match {
+  h4 {
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .date-match {
+    margin: 0px auto;
+    color: #e2af23;
+    font-size: 11px;
+    position: relative;
+    font-weight: 700;
+    top: -8px;
+  }
+  .versous {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .start-at {
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 13px;
+  }
+  .time-left {
+    border-top: 1px solid #b3b3b3;
+    padding-top: 10px;
+    .time {
+      font-size: 25px;
+      display: flex;
+      font-weight: bold;
+      margin: 0 auto;
+      margin-top: 0px;
+      width: 175px;
+      font-family: 'IRANSans_num_web';
+      span {
+        margin: 0 12px;
+      }
+    }
+    .time-letters {
+      ul {
+        margin-top: -27px;
+        margin-bottom: 5px;
+        li {
+          margin-left: 24px;
+          margin-right: 0px;
+          &:last-child {
+            margin-left: 0;
+          }
+          span {
+            font-size: 12px;
+            margin-right: -5px;
+            color: #9c9c9c;
           }
         }
       }
     }
   }
-  .news-letter {
-    .content {
-      padding: 15px;
-      h4 {
-        margin-bottom: 0;
-      }
-      .text {
-        margin-bottom: 15px;
-        margin-top: 5px;
-        font-size: 11px;
-      }
-      .form-control {
-        padding: 8px 13px;
-        font-size: 13px;
-      }
+}
+
+.news-letter {
+  .content {
+    padding: 15px;
+    h4 {
+      margin-bottom: 0;
+    }
+    .text {
+      margin-bottom: 15px;
+      margin-top: 5px;
+      font-size: 11px;
+    }
+    .form-control {
+      padding: 8px 13px;
+      font-size: 13px;
     }
   }
 }
@@ -875,7 +925,7 @@ span.span_size {
 }
 
 .btn_1 {
-  padding: 5px 10px;
+  padding: 5px 25px;
   border-radius: 5px;
   border: 1px solid #e2af23;
   transition: .4s;
