@@ -264,6 +264,43 @@ span.span_size {
   }
 }
 
+.social-media-2 {
+  .facebook {
+    background-color: #4c87c1;
+  }
+  .twitter {
+    background-color: #80fbf9;
+  }
+  .rss {
+    background-color: #ffc500;
+  }
+  .item {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    transition: .4s;
+    &:hover {
+          box-shadow: 7px 7px 14px #868686;
+    }
+    .icon {
+      font-size: 25px;
+      padding: 0 20px;
+      color: #fff;
+    }
+    h5 {
+      font-size: 13px;
+      text-align: center;
+      color: #fff
+    }
+    p {
+      text-align: center;
+      font-size: 7px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .latest-matches-1 {
   .container-fluid {
     .row {
@@ -366,6 +403,68 @@ span.span_size {
     top: -5px;
     font-weight: bold;
     text-transform: uppercase;
+  }
+}
+
+.comments {
+  .commented {
+    &.reply {
+      margin-right: 90px;
+    }
+    h3 {
+      font-size: 17px;
+      line-height: 18px;
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+    ul {
+      li {
+        font-size: 12px;
+        padding-left: 15px;
+        margin-right: 10px;
+        border-left: 1px solid #000;
+        &:last-child {
+          margin-left: 0;
+          border: none;
+          padding: 0;
+        }
+        &:first-child {
+          margin-right: 0;
+        }
+        span,
+        a {
+          color: #cccccc;
+        }
+        span {
+          i {
+            margin-left: 5px;
+            color: #868686;
+          }
+        }
+        a {
+          position: relative;
+          &:after {
+            content: "\f112";
+            font-family: FontAwesome;
+            position: absolute;
+            color: #828282;
+            top: 0px;
+            left: -20px;
+          }
+        }
+      }
+    }
+    p {
+      color: #8a8a8a;
+      margin-top: -8px;
+      text-align: justify;
+      font-size: 10px;
+      margin-left: 10rem;
+    }
+    img {
+      border-radius: 50%;
+      border: 1px solid #000;
+    }
   }
 }
 
@@ -810,13 +909,12 @@ span.span_size {
   li {
     margin-left: 10px;
     a {
-      font-size: 13px;
       padding: 7px;
-      border-radius: 5px;
       color: #b7b7b7;
       font-family: 'IRANSans_num_web';
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 36px;
+      font-size: 18px;
       text-align: center;
     }
     &:last-child {
@@ -935,6 +1033,46 @@ span.span_size {
   &:hover {
     background-color: #fff;
     color: #e2af23;
+  }
+}
+
+.ticket-1 {
+  margin-bottom: 9px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 35px;
+  margin-top: -7px;
+  margin-bottom: 15px;
+  a {
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    color: #888;
+    font-weight: lighter;
+    width: 85px;
+    padding-top: 6px;
+    font-size: 14px;
+    padding-bottom: 3px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    bottom: 8px;
+    z-index: 2;
+  }
+  &:before {
+    left: -7px;
+  }
+  &:after {
+    right: -7px;
   }
 }
 

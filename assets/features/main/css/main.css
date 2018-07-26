@@ -620,6 +620,33 @@ span.span_size {
   .social-media-1 ul .telegram {
     color: #009fff; }
 
+.social-media-2 .facebook {
+  background-color: #4c87c1; }
+.social-media-2 .twitter {
+  background-color: #80fbf9; }
+.social-media-2 .rss {
+  background-color: #ffc500; }
+.social-media-2 .item {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0;
+  transition: .4s; }
+  .social-media-2 .item:hover {
+    box-shadow: 7px 7px 14px #868686; }
+  .social-media-2 .item .icon {
+    font-size: 25px;
+    padding: 0 20px;
+    color: #fff; }
+  .social-media-2 .item h5 {
+    font-size: 13px;
+    text-align: center;
+    color: #fff; }
+  .social-media-2 .item p {
+    text-align: center;
+    font-size: 7px;
+    color: #fff;
+    margin-bottom: 0; }
+
 .latest-matches-1 .container-fluid .row {
   padding-right: 15px;
   padding-left: 15px; }
@@ -688,6 +715,49 @@ span.span_size {
   top: -5px;
   font-weight: bold;
   text-transform: uppercase; }
+
+.comments .commented.reply {
+  margin-right: 90px; }
+.comments .commented h3 {
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  font-weight: 400; }
+.comments .commented ul li {
+  font-size: 12px;
+  padding-left: 15px;
+  margin-right: 10px;
+  border-left: 1px solid #000; }
+  .comments .commented ul li:last-child {
+    margin-left: 0;
+    border: none;
+    padding: 0; }
+  .comments .commented ul li:first-child {
+    margin-right: 0; }
+  .comments .commented ul li span,
+  .comments .commented ul li a {
+    color: #cccccc; }
+  .comments .commented ul li span i {
+    margin-left: 5px;
+    color: #868686; }
+  .comments .commented ul li a {
+    position: relative; }
+    .comments .commented ul li a:after {
+      content: "\f112";
+      font-family: FontAwesome;
+      position: absolute;
+      color: #828282;
+      top: 0px;
+      left: -20px; }
+.comments .commented p {
+  color: #8a8a8a;
+  margin-top: -8px;
+  text-align: justify;
+  font-size: 10px;
+  margin-left: 10rem; }
+.comments .commented img {
+  border-radius: 50%;
+  border: 1px solid #000; }
 
 .comment-1 .profile-details h4 {
   line-height: 13px;
@@ -1028,13 +1098,12 @@ span.span_size {
   .pagination li {
     margin-left: 10px; }
     .pagination li a {
-      font-size: 13px;
       padding: 7px;
-      border-radius: 5px;
       color: #b7b7b7;
       font-family: 'IRANSans_num_web';
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 36px;
+      font-size: 18px;
       text-align: center; }
     .pagination li:last-child {
       margin-left: 0; }
@@ -1123,6 +1192,40 @@ span.span_size {
   .btn_1:hover {
     background-color: #fff;
     color: #e2af23; }
+
+.ticket-1 {
+  margin-bottom: 9px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 35px;
+  margin-top: -7px;
+  margin-bottom: 15px; }
+  .ticket-1 a {
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    color: #888;
+    font-weight: lighter;
+    width: 85px;
+    padding-top: 6px;
+    font-size: 14px;
+    padding-bottom: 3px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1; }
+  .ticket-1:before, .ticket-1:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    bottom: 8px;
+    z-index: 2; }
+  .ticket-1:before {
+    left: -7px; }
+  .ticket-1:after {
+    right: -7px; }
 
 .cutomized-form-radio {
   display: block;
@@ -1529,7 +1632,7 @@ span.span_size {
   padding: 0; }
   .landing-news .pagination {
     position: static !important;
-    width: 235px;
+    width: 280px;
     margin-right: auto !important;
     margin-left: auto; }
     .landing-news .pagination li {
@@ -1852,6 +1955,41 @@ span.span_size {
 .testimonial.players #owl-four .owl-dots .owl-dot:hover span {
   background: linear-gradient(90deg, #008aed 0%, #1be3c8 100%); }
 
+#owl-seven {
+  position: relative; }
+  #owl-seven .owl-dots {
+    display: none; }
+  #owl-seven .date {
+    position: relative;
+    top: -5px;
+    margin-bottom: 30px; }
+  #owl-seven h5 {
+    font-size: 15px !important;
+    margin-top: 10px; }
+  #owl-seven .owl-nav {
+    position: absolute;
+    bottom: 250px;
+    color: #e2af23;
+    font-weight: bold;
+    width: 100%;
+    font-size: 30px; }
+    #owl-seven .owl-nav button:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: none;
+      text-decoration: none;
+      color: #Fff; }
+    #owl-seven .owl-nav [class*=owl-]:hover {
+      background: transparent;
+      color: #e2af23;
+      text-decoration: none; }
+    #owl-seven .owl-nav .owl-prev {
+      position: absolute;
+      right: 15px; }
+    #owl-seven .owl-nav .owl-next {
+      position: absolute;
+      left: 15px; }
+
 .banner_3:after {
   background-image: url(../../../img/bg/Arabic_carpet.jpg);
   background-repeat: no-repeat;
@@ -1903,32 +2041,42 @@ span.span_size {
     margin-left: -5px; }
 .specific-news .border-box-2 .simple-divider {
   margin: 20px 15px; }
+.specific-news .pagination.post li:last-child .page-link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+.specific-news .pagination.post li:first-child .page-link {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
 .specific-news .pagination {
   margin-right: 15px;
   margin-top: 15px;
   position: absolute;
+  flex-direction: row-reverse;
   bottom: -3px;
   left: 40px; }
   .specific-news .pagination li {
     margin-left: 0; }
-    .specific-news .pagination li:first-child .page-link {
+    .specific-news .pagination li .page-link {
+      border-radius: 5px; }
+      .specific-news .pagination li .page-link:hover {
+        color: #ffffff;
+        background-color: #e2af23; }
+    .specific-news .pagination li:last-child .page-link {
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       border-radius: 5px; }
-    .specific-news .pagination li:last-child .page-link {
+    .specific-news .pagination li:first-child .page-link {
       border-top-left-radius: 0.25rem;
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       border-radius: 5px; }
-.specific-news .unknown-btn {
-  height: 35px;
-  margin-left: -15px;
-  margin-right: 40px;
-  position: relative;
-  bottom: 10px; }
 .specific-news .right_side .header-section .row .col-6:first-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px; }
@@ -1961,46 +2109,6 @@ span.span_size {
     position: static; }
   .specific-news .news-content .date {
     width: 100%; }
-.specific-news .comments .commented h3 {
-  font-size: 17px;
-  line-height: 18px;
-  margin-bottom: 8px;
-  font-weight: 400; }
-.specific-news .comments .commented ul li {
-  font-size: 12px;
-  padding-left: 15px;
-  margin-right: 10px;
-  border-left: 1px solid #000; }
-  .specific-news .comments .commented ul li:last-child {
-    margin-left: 0;
-    border: none;
-    padding: 0; }
-  .specific-news .comments .commented ul li:first-child {
-    margin-right: 0; }
-  .specific-news .comments .commented ul li span,
-  .specific-news .comments .commented ul li a {
-    color: #cccccc; }
-  .specific-news .comments .commented ul li span i {
-    margin-left: 5px;
-    color: #868686; }
-  .specific-news .comments .commented ul li a {
-    position: relative; }
-    .specific-news .comments .commented ul li a:after {
-      content: "\f112";
-      font-family: FontAwesome;
-      position: absolute;
-      color: #828282;
-      top: 0px;
-      left: -20px; }
-.specific-news .comments .commented p {
-  color: #8a8a8a;
-  margin-top: -8px;
-  text-align: justify;
-  font-size: 10px;
-  margin-left: 10rem; }
-.specific-news .comments .commented img {
-  border-radius: 50%;
-  border: 1px solid #000; }
 .specific-news form {
   margin-right: 15px;
   margin-left: 15px; }
