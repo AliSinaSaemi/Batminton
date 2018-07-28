@@ -423,6 +423,14 @@ h6 {
 .dis-blc {
   display: block; }
 
+.display-flex-r {
+  display: flex;
+  flex-direction: row; }
+
+.display-flex-rr {
+  display: flex;
+  flex-direction: row-reverse; }
+
 body::-webkit-scrollbar {
   width: 10px;
   background-color: #F5F5F5; }
@@ -1282,6 +1290,103 @@ span.span_size {
     background-color: #eeeeee; }
   .cutomized-form-radio input:checked ~ .checkmark:after {
     display: block; }
+
+.custom-checkbox {
+  position: relative;
+  left: 10px; }
+
+.custom-checkbox > [type="checkbox"],
+.custom-checkbox > label {
+  margin-bottom: 0px !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.custom-checkbox > [type="checkbox"]:not(:checked),
+.custom-checkbox > [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  display: none; }
+
+.custom-checkbox > [type="checkbox"]:not(:checked) + label,
+.custom-checkbox > [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer; }
+
+.custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+.custom-checkbox > [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  border-radius: 2px; }
+
+.custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
+.custom-checkbox > [type="checkbox"]:checked + label:after {
+  font: normal normal normal 7px/1 FontAwesome;
+  content: '\f00c';
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 4px;
+  color: #ffffff;
+  transition: all .2s; }
+
+.custom-checkbox > [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0); }
+
+.custom-checkbox > [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1); }
+
+.custom-checkbox > [type="checkbox"]:checked + label:before {
+  background-color: #e2af23; }
+
+.custom-checkbox > [type="checkbox"][data-indeterminate] + label:after,
+.custom-checkbox > [type="checkbox"][data-indeterminate] + label:after {
+  content: '\f068';
+  left: 6px;
+  opacity: 1;
+  transform: scale(1); }
+
+.custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:before,
+.custom-checkbox > [type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+  cursor: not-allowed;
+  opacity: 1;
+  color: #dadada; }
+
+.custom-checkbox > [type="checkbox"]:disabled:checked + label:after {
+  color: #dadada;
+  cursor: not-allowed; }
+
+.custom-checkbox > [type="checkbox"]:disabled + label {
+  color: #aaa;
+  cursor: not-allowed; }
+
+.custom-checkbox > [type="checkbox"]:checked:focus + label:before,
+.custom-checkbox > [type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px solid #66afe9;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.custom-checkbox > label:hover:before {
+  border: 1px solid #88D2FF !important; }
+
+.custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:hover:before,
+.custom-checkbox > [type="checkbox"]:disabled:checked + label:hover:before {
+  border: 1px solid #E4E4E4 !important; }
 
 /***************************** 
 
@@ -2458,102 +2563,123 @@ span.span_size {
 [disabled] .noUi-handle {
   cursor: not-allowed; }
 
-.custom-checkbox {
-  position: relative;
-  left: 10px; }
-
-.custom-checkbox > [type="checkbox"],
-.custom-checkbox > label {
-  margin-bottom: 0px !important;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.custom-checkbox > [type="checkbox"]:not(:checked),
-.custom-checkbox > [type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
-  display: none; }
-
-.custom-checkbox > [type="checkbox"]:not(:checked) + label,
-.custom-checkbox > [type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 25px;
-  cursor: pointer; }
-
-.custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
-.custom-checkbox > [type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -12px;
-  width: 14px;
-  height: 14px;
-  border: 1px solid #ddd;
-  background: #ffffff;
-  border-radius: 2px; }
-
-.custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
-.custom-checkbox > [type="checkbox"]:checked + label:after {
-  font: normal normal normal 7px/1 FontAwesome;
-  content: '\f00c';
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
-  left: 4px;
-  color: #ffffff;
-  transition: all .2s; }
-
-.custom-checkbox > [type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0); }
-
-.custom-checkbox > [type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1); }
-
-.custom-checkbox > [type="checkbox"]:checked + label:before {
-  background-color: #e2af23; }
-
-.custom-checkbox > [type="checkbox"][data-indeterminate] + label:after,
-.custom-checkbox > [type="checkbox"][data-indeterminate] + label:after {
-  content: '\f068';
-  left: 6px;
-  opacity: 1;
-  transform: scale(1); }
-
-.custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:before,
-.custom-checkbox > [type="checkbox"]:disabled:checked + label:before {
-  box-shadow: none;
-  background-color: #eeeeee;
-  border-color: #eeeeee;
-  cursor: not-allowed;
-  opacity: 1;
-  color: #dadada; }
-
-.custom-checkbox > [type="checkbox"]:disabled:checked + label:after {
-  color: #dadada;
-  cursor: not-allowed; }
-
-.custom-checkbox > [type="checkbox"]:disabled + label {
-  color: #aaa;
-  cursor: not-allowed; }
-
-.custom-checkbox > [type="checkbox"]:checked:focus + label:before,
-.custom-checkbox > [type="checkbox"]:not(:checked):focus + label:before {
-  border: 1px solid #66afe9;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-
-.custom-checkbox > label:hover:before {
-  border: 1px solid #88D2FF !important; }
-
-.custom-checkbox > [type="checkbox"]:disabled:not(:checked) + label:hover:before,
-.custom-checkbox > [type="checkbox"]:disabled:checked + label:hover:before {
-  border: 1px solid #E4E4E4 !important; }
+.selected-product {
+  padding: 70px 0; }
+  .selected-product .row .col-md-6:first-child {
+    background-color: #e6e6e6; }
+  .selected-product .row .col-md-6:nth-child(2) {
+    border-top: 1px solid #b5b5b5;
+    border-bottom: 1px solid #b5b5b5;
+    border-left: 1px solid #b5b5b5;
+    padding-top: 35px;
+    padding-bottom: 35px; }
+  .selected-product .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 17px; }
+  .selected-product .sale {
+    margin-bottom: 0;
+    color: #15b095; }
+  .selected-product .real-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #9c9c9c;
+    margin-top: 5px;
+    margin-right: 5px; }
+  .selected-product .text {
+    text-align: justify;
+    font-size: 14px;
+    color: #6d6d6d; }
+  .selected-product hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid rgba(84, 84, 84, 0.51); }
+  .selected-product .select-size ul {
+    margin-right: 30px; }
+  .selected-product .select-size button {
+    background: transparent;
+    border: 1px solid #000;
+    width: 38px;
+    text-align: center;
+    height: 27px;
+    padding-top: 3px;
+    transition: .3s;
+    cursor: pointer; }
+    .selected-product .select-size button:hover {
+      color: #15b095;
+      border: 1px solid #15b095; }
+  .selected-product .stars {
+    margin-bottom: 0;
+    color: #e2af23;
+    margin-right: 40px; }
+  .selected-product #owl-eight {
+    position: relative; }
+    .selected-product #owl-eight img {
+      width: 400px;
+      margin: 0 auto; }
+    .selected-product #owl-eight .owl-dots {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      z-index: 2;
+      right: 0; }
+      .selected-product #owl-eight .owl-dots .owl-dot:focus {
+        box-shadow: none;
+        border: none;
+        outline: none; }
+      .selected-product #owl-eight .owl-dots .owl-dot span {
+        background: #869791; }
+      .selected-product #owl-eight .owl-dots .owl-dot.active span {
+        background-color: #15b095;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 6px; }
+  .selected-product .custom-checkbox > [type="checkbox"]:not(:checked) + label:before,
+  .selected-product .custom-checkbox > [type="checkbox"]:checked + label:before {
+    width: 30px;
+    height: 30px; }
+  .selected-product .custom-checkbox.red > [type="checkbox"]:not(:checked) + label:before,
+  .selected-product .custom-checkbox.red > [type="checkbox"]:checked + label:before {
+    background-color: #da302b; }
+  .selected-product .custom-checkbox.gray > [type="checkbox"]:not(:checked) + label:before,
+  .selected-product .custom-checkbox.gray > [type="checkbox"]:checked + label:before {
+    background-color: #9a9ea2; }
+  .selected-product .custom-checkbox.green > [type="checkbox"]:not(:checked) + label:before,
+  .selected-product .custom-checkbox.green > [type="checkbox"]:checked + label:before {
+    background-color: #c2d789; }
+  .selected-product .custom-checkbox > [type="checkbox"]:not(:checked) + label:after,
+  .selected-product .custom-checkbox > [type="checkbox"]:checked + label:after {
+    font: normal normal normal 21px/1 FontAwesome; }
+  .selected-product .color ul {
+    margin-right: 27px;
+    margin-top: -9px; }
+  .selected-product .btn_1 {
+    margin-right: auto;
+    display: block;
+    margin-bottom: -20px; }
+  .selected-product .counter span {
+    margin-left: 25px;
+    margin-top: 5px; }
+  .selected-product .counter p {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 5px; }
+  .selected-product .counter button {
+    width: 35px;
+    height: 35px;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #afafaf;
+    color: #afafaf;
+    cursor: pointer;
+    background-color: #fff; }
+  .selected-product .delivery p {
+    color: #868686;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 26px; }
 
 footer.banner_3 {
   padding: 0; }

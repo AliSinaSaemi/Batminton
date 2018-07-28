@@ -130,6 +130,7 @@ ul {
     top: #{$top_relative}px;
   }
 }
+
 @for $top_relative from 11 through 15 {
   .top-relative-#{$top_relative} {
     top: #{$top_relative}px;
@@ -160,7 +161,6 @@ img.circle {
   width: 100%;
   height: 1px;
   background-color: #bababa;
-  
 }
 
 .no-smoth {
@@ -169,7 +169,6 @@ img.circle {
 
 .smoth {
   border-radius: 5px;
-  
 }
 
 h1,
@@ -204,7 +203,7 @@ li {
 }
 
 .faNum {
-      font-family: 'IRANSans_num_web';
+  font-family: 'IRANSans_num_web';
 }
 
 .mr-bt-0 {
@@ -309,4 +308,14 @@ h6 {
 
 .dis-blc {
   display: block
+}
+
+.display-flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-flex-rr {
+  display: flex;
+  flex-direction: row-reverse;
 }
