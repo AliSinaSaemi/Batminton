@@ -167,6 +167,19 @@ img.circle {
   border-radius: 0 !important;
 }
 
+.row_margin {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row_margin_l {
+  margin-left: -15px;
+}
+
+.row_margin_r {
+  margin-right: -15px;
+}
+
 .smoth {
   border-radius: 5px;
 }
@@ -180,6 +193,7 @@ h6,
 p,
 label,
 input,
+table,
 a,
 span,
 strong,

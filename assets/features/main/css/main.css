@@ -273,6 +273,16 @@ img.circle {
 .no-smoth {
   border-radius: 0 !important; }
 
+.row_margin {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.row_margin_l {
+  margin-left: -15px; }
+
+.row_margin_r {
+  margin-right: -15px; }
+
 .smoth {
   border-radius: 5px; }
 
@@ -285,6 +295,7 @@ h6,
 p,
 label,
 input,
+table,
 a,
 span,
 strong,
@@ -1117,7 +1128,7 @@ span.span_size {
   margin-right: 15px;
   margin-top: 15px; }
   .pagination li {
-    margin-left: 10px; }
+    margin-right: 10px; }
     .pagination li a {
       padding: 7px;
       color: #b7b7b7;
@@ -1753,10 +1764,6 @@ span.span_size {
     width: 280px;
     margin-right: auto !important;
     margin-left: auto; }
-    .landing-news .pagination li {
-      margin-left: 10px !important; }
-      .landing-news .pagination li:last-child {
-        margin-left: 0 !important; }
 
 .instantaneous-news .sa_yellow_section {
   background-color: #fad32b;
@@ -2680,6 +2687,175 @@ span.span_size {
     font-size: 14px;
     font-weight: lighter;
     line-height: 26px; }
+
+.boss-table {
+  padding-top: 100px;
+  padding-bottom: 30px; }
+  .boss-table .map {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #363636;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 480px;
+    margin-right: 15px;
+    margin-left: 15px; }
+    .boss-table .map img {
+      position: absolute;
+      top: -260px; }
+  .boss-table .search-bosses input {
+    width: 100%;
+    border: 1px solid #aeaeae;
+    padding: 5px 15px;
+    height: 42px;
+    border-radius: 5px; }
+  .boss-table .search-bosses button {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    border-radius: 3px;
+    border: 1px solid #aeaeae;
+    color: #aeaeae;
+    background-color: #fff;
+    padding-top: 5px;
+    width: 33px;
+    text-align: center;
+    cursor: pointer; }
+  .boss-table .number-members {
+    font-size: 20px;
+    position: relative;
+    color: #aeaeae;
+    padding-left: 54px; }
+    .boss-table .number-members:before {
+      content: "\f0c0";
+      font-family: FontAwesome;
+      position: absolute;
+      left: 0;
+      font-size: 40px;
+      top: -14px;
+      color: #aeaeae; }
+  .boss-table table {
+    font-family: 'IRANSans', 'IRANSans_num_web';
+    font-weight: lighter; }
+    .boss-table table .col-table:hover {
+      cursor: pointer; }
+      .boss-table table .col-table:hover th .plus-maker-1 {
+        transform: rotate(180deg); }
+      .boss-table table .col-table:hover .inline {
+        padding-top: 90px;
+        padding-bottom: 90px; }
+        .boss-table table .col-table:hover .inline .hover-boss.first {
+          top: 15px; }
+        .boss-table table .col-table:hover .inline .hover-boss.second {
+          bottom: 45px; }
+        .boss-table table .col-table:hover .inline .hover-boss {
+          opacity: 1;
+          position: absolute; }
+          .boss-table table .col-table:hover .inline .hover-boss img {
+            width: 80px;
+            height: 80px; }
+          .boss-table table .col-table:hover .inline .hover-boss .link-2 {
+            font-size: 13px; }
+        .boss-table table .col-table:hover .inline .link-1 {
+          opacity: 0;
+          z-index: 1; }
+      .boss-table table .col-table:hover th:first-child {
+        padding-bottom: 85px;
+        padding-top: 90px; }
+    .boss-table table .thead-dark {
+      background-color: #15b095 !important; }
+      .boss-table table .thead-dark th {
+        font-weight: lighter;
+        padding-right: 19px;
+        font-size: 19px;
+        color: #fff;
+        background-color: #15b095 !important;
+        border-color: transparent; }
+        .boss-table table .thead-dark th:first-child {
+          border-left: 1px solid #999999;
+          padding-left: 20px; }
+    .boss-table table td.inline {
+      display: flex;
+      flex-direction: row; }
+      .boss-table table td.inline .hover-boss.first {
+        top: 5px;
+        transition: .4s; }
+      .boss-table table td.inline .hover-boss.second {
+        transition: .4s;
+        bottom: 3px; }
+      .boss-table table td.inline .hover-boss {
+        opacity: 0;
+        position: absolute; }
+        .boss-table table td.inline .hover-boss img {
+          width: 1px;
+          height: 1px;
+          transition: .4s;
+          border-radius: 50%;
+          position: absolute; }
+        .boss-table table td.inline .hover-boss .link-2 {
+          margin-right: 90px;
+          margin-top: 30px;
+          transition: .4s;
+          font-size: 4px; }
+      .boss-table table td.inline .link-1 {
+        z-index: 2;
+        transition: .4s; }
+        .boss-table table td.inline .link-1:first-child {
+          margin-left: 80px; }
+    .boss-table table tbody tr th {
+      color: #999999;
+      font-weight: lighter;
+      position: relative; }
+      .boss-table table tbody tr th .plus-maker-1,
+      .boss-table table tbody tr th .plus-maker-2 {
+        bottom: 0;
+        position: absolute;
+        width: 12px;
+        height: 1px;
+        background-color: #999999;
+        right: 6px;
+        top: 0;
+        display: block;
+        margin: auto 0;
+        transition: .4s; }
+      .boss-table table tbody tr th .plus-maker-1 {
+        transform: rotate(90deg); }
+      .boss-table table tbody tr th:first-child {
+        border-left: 1px solid #999999;
+        border-right: 1px solid #999999;
+        padding-top: 10px;
+        border-top: none;
+        border-bottom: 1px solid #999999;
+        padding-right: 25px;
+        position: relative;
+        padding-bottom: 0;
+        transition: .4s;
+        border-top: none; }
+    .boss-table table tbody tr td {
+      font-size: 14px;
+      font-weight: lighter;
+      border-bottom: 1px solid #999999;
+      transition: .4s;
+      position: relative; }
+      .boss-table table tbody tr td:last-child {
+        border-left: 1px solid #999999;
+        border-bottom: 1px solid #999999;
+        border-top: none; }
+      .boss-table table tbody tr td a {
+        color: #999999; }
+        .boss-table table tbody tr td a p {
+          margin-bottom: 0;
+          padding-right: 45px;
+          position: relative; }
+          .boss-table table tbody tr td a p.vice-boss {
+            padding-right: 80px; }
+          .boss-table table tbody tr td a p span {
+            position: absolute;
+            right: 0;
+            color: #e2af23; }
+    .boss-table table tbody tr:last-child th:first-child {
+      border-bottom-right-radius: 5px; }
 
 footer.banner_3 {
   padding: 0; }
