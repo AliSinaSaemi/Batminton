@@ -865,16 +865,6 @@ $min_1200px: '(min-width: 1200px)';
   .boss-table #accordion .card-body .hover-boss p span {
     right: 5px;
   }
-  .boss-tree .profile .text-box {
-    position: absolute;
-    left: -52px;
-    bottom: 0;
-    width: 120px;
-    color: #8e8e8e;
-    background-color: #fff;
-    bottom: 25px;
-    z-index: 1;
-  }
 }
 
 @media #{$max_576px} {
@@ -898,12 +888,37 @@ $min_1200px: '(min-width: 1200px)';
 
 /* boss-tree */
 
-@media #{$min_1200px} {}
+@media #{$min_1200px} {
+  .boss-tree {
+    .require-2 {
+      display: none;
+    }
+  }
+}
 
 @media #{$max_1200px} {
   .boss-tree {
     .require-1 {
       display: none;
+    }
+  }
+  .boss-tree .profile {
+    position: static;
+  }
+  .boss-tree .profile .text-box {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 120px;
+    color: #8e8e8e;
+    background-color: #fff;
+    border: 1px solid !important;
+    border-radius: 5px;
+    z-index: 1;
+    right: 0;
+    margin: auto;
+    p {
+      margin-bottom: 3px;
     }
   }
   .boss-tree .profile img {
@@ -971,8 +986,19 @@ $min_1200px: '(min-width: 1200px)';
   }
   .boss-tree .profile.boss .text-box {
     width: 390px;
-    right: -30px;
-    bottom: 10px;
+    right: 0;
+    left: 0;
+    bottom: -70px;
+    z-index: 2;
+    .job {
+      font-size: 23px;
+      color: #000;
+      text-align: center;
+    }
+    .name {
+      font-size: 22px;
+      margin-bottom: 1px;
+    }
   }
   .boss-tree .level-2 .middle-middle:before {
     right: 0;
@@ -997,11 +1023,18 @@ $min_1200px: '(min-width: 1200px)';
       text-align: center;
     }
   }
+  .boss-tree .profile .text-box .name {
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+  }
   .boss-tree .level-2 .text-box {
-    left: 67px;
+    left: 0;
     bottom: 0;
     color: #a5a5a5;
     background-color: #fff;
+    right: 0;
+    margin: auto;
     bottom: -40px;
     border-radius: 5px;
     border: 1px solid #4a4a4a;
@@ -1023,6 +1056,33 @@ $min_1200px: '(min-width: 1200px)';
   }
 }
 
+@media (max-width: 1060px) {
+  .boss-tree .level-1 .middle:after,
+  .boss-tree .level-1 .first:before,
+  .boss-tree .level-1 .last:before {
+    display: none;
+  }
+  .boss-tree .level-1:after {
+    content: '';
+    height: 1px;
+    background-color: #e2af23;
+    width: 60%;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media #{$max_768px} {
+  .require-2 {
+    display: none; 
+  }
+}
+
+@media #{$min_576px} and #{$max_768px} {
+
+}
 
 /* product */
 
