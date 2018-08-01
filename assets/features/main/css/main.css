@@ -2272,6 +2272,18 @@ span.span_size {
 .shop-list {
   padding-top: 50px;
   padding-bottom: 70px; }
+  .shop-list .card-header {
+    background-color: #fff;
+    border-right: 13px solid #43bfaa; }
+    .shop-list .card-header button {
+      width: 100%;
+      text-align: right;
+      color: #000; }
+      .shop-list .card-header button:hover, .shop-list .card-header button:focus {
+        box-shadow: none;
+        border: none;
+        text-decoration: none;
+        outline: none; }
   .shop-list .menu a {
     display: block;
     padding: 5px 10px;
@@ -2516,10 +2528,12 @@ span.span_size {
   left: 0;
   bottom: 0; }
 
+.noUi-handle-2,
 .noUi-handle {
   position: relative;
   z-index: 1; }
 
+.noUi-stacking .noUi-handle-2,
 .noUi-stacking .noUi-handle {
   /* This class is applied to the lower origin when
    its values is > 50%. */
@@ -2536,6 +2550,7 @@ span.span_size {
  * Browsers can paint handles in their own layer.
  */
 .noUi-base,
+.noUi-handle-2,
 .noUi-handle {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
@@ -2545,6 +2560,7 @@ span.span_size {
 .noUi-horizontal {
   height: 4px; }
 
+.noUi-horizontal .noUi-handle-2,
 .noUi-horizontal .noUi-handle {
   width: 10px;
   height: 10px;
@@ -2578,12 +2594,14 @@ span.span_size {
 .noUi-vertical .noUi-draggable {
   cursor: n-resize; }
 
+.noUi-handle-2,
 .noUi-handle {
   cursor: default;
   -webkit-box-sizing: content-box !important;
   -moz-box-sizing: content-box !important;
   box-sizing: content-box !important; }
 
+.noUi-handle-2:active,
 .noUi-handle:active {
   border: 8px solid #345DBB;
   border: 8px solid rgba(226, 175, 35, 0.5);
@@ -2598,6 +2616,7 @@ span.span_size {
   background: #B8B8B8; }
 
 [disabled].noUi-origin,
+[disabled] .noUi-handle-2,
 [disabled] .noUi-handle {
   cursor: not-allowed; }
 
@@ -3822,6 +3841,30 @@ footer .copyright {
 
   .shopping-list .total-price {
     font-size: 12px; } }
+/* shop */
+@media (max-width: 992px) {
+  .shop-list .list .product p,
+  .shop-list .list .product h5 {
+    color: #fff; }
+
+  .shop-list .list .product {
+    background-color: #9d9d9d; }
+
+  .shop-list .list .product ul {
+    height: 27px; }
+
+  .shop-list .list .product img {
+    opacity: .5; }
+
+  .shop-list .list .product ul li a {
+    font-size: 14px;
+    opacity: 1; } }
+@media (max-width: 768px) {
+  .shop-list .dropdown-content {
+    right: -50px; } }
+@media (max-width: 576px) {
+  .shop-list .header h3 {
+    margin-bottom: 45px; } }
 /* product */
 @media (max-width: 768px) {
   .selected-product .row .col-md-6:nth-child(2) {

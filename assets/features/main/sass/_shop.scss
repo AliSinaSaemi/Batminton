@@ -1,6 +1,22 @@
 .shop-list {
   padding-top: 50px;
   padding-bottom: 70px;
+  .card-header {
+    background-color: #fff;
+    border-right: 13px solid #43bfaa;
+    button {
+      width: 100%;
+      text-align: right;
+      color: #000;
+      &:hover,
+      &:focus {
+        box-shadow: none;
+        border: none;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
   .menu {
     a {
       display: block;
@@ -313,12 +329,12 @@
   left: 0;
   bottom: 0;
 }
-
+.noUi-handle-2,
 .noUi-handle {
   position: relative;
   z-index: 1;
 }
-
+.noUi-stacking .noUi-handle-2,
 .noUi-stacking .noUi-handle {
   /* This class is applied to the lower origin when
    its values is > 50%. */
@@ -340,6 +356,7 @@
  */
 
 .noUi-base,
+.noUi-handle-2,
 .noUi-handle {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -352,7 +369,7 @@
 .noUi-horizontal {
   height: 4px;
 }
-
+.noUi-horizontal .noUi-handle-2,
 .noUi-horizontal .noUi-handle {
   width: 10px;
   height: 10px;
@@ -398,14 +415,14 @@
 .noUi-vertical .noUi-draggable {
   cursor: n-resize;
 }
-
+.noUi-handle-2,
 .noUi-handle {
   cursor: default;
   -webkit-box-sizing: content-box !important;
   -moz-box-sizing: content-box !important;
   box-sizing: content-box !important;
 }
-
+.noUi-handle-2:active,
 .noUi-handle:active {
   border: 8px solid #345DBB;
   border: 8px solid rgba(226, 175, 35, 0.5);
@@ -424,7 +441,7 @@
 }
 
 [disabled].noUi-origin,
+[disabled] .noUi-handle-2,
 [disabled] .noUi-handle {
   cursor: not-allowed;
 }
-

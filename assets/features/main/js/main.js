@@ -224,6 +224,39 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('.noUi-handle-2').on('click', function () {
+    $(this).width(50);
+  });
+  var rangeSlider_2 = document.getElementById('slider-range-2');
+  var moneyFormat = wNumb({
+    decimals: 0,
+    thousand: ',',
+    prefix: ''
+  });
+  noUiSlider.create(rangeSlider_2, {
+    start: [500000, 1000000],
+    step: 1,
+    range: {
+      'min': [100000],
+      'max': [1000000]
+    },
+    format: moneyFormat,
+    connect: true
+  });
+
+  // Set visual min and max values and also update value hidden form inputs
+  rangeSlider_2.noUiSlider.on('update', function (values, handle) {
+    document.getElementById('slider-range-value1-2').innerHTML = values[0];
+    document.getElementById('slider-range-value2-2').innerHTML = values[1];
+    document.getElementsByName('min-value-2').value = moneyFormat.from(
+      values[0]);
+    document.getElementsByName('max-value-2').value = moneyFormat.from(
+      values[1]);
+  });
+});
+
+
 
 
 // https://refreshless.com/nouislider/
