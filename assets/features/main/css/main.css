@@ -9,10 +9,16 @@ body {
 .width-full {
   width: 100%; }
 
+.just-flex {
+  display: flex; }
+
 a {
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
+
+.no_border {
+  border: none !important; }
 
 a.sa_white_link {
   color: #FFf;
@@ -1144,6 +1150,8 @@ span.span_size {
       color: #fff;
       background-color: #15b095;
       border-color: #15b095; }
+  .pagination.post li {
+    margin-right: 0; }
 
 .next-match h4 {
   margin: 0 auto;
@@ -2856,6 +2864,235 @@ span.span_size {
             color: #e2af23; }
     .boss-table table tbody tr:last-child th:first-child {
       border-bottom-right-radius: 5px; }
+
+.boss-tree {
+  padding: 50px 0;
+  padding-bottom: 150px; }
+  .boss-tree .container {
+    max-width: 1199px; }
+  .boss-tree .subject {
+    width: 350px;
+    padding: 15px;
+    background-color: #e2af23;
+    display: block;
+    margin: 0 auto;
+    right: -41px;
+    border-radius: 10px;
+    position: relative; }
+    .boss-tree .subject:after {
+      content: '';
+      width: 1px;
+      height: 80px;
+      background-color: #e2af23;
+      position: absolute;
+      left: 0;
+      bottom: -80px;
+      right: 0;
+      display: block;
+      margin: 0 auto; }
+    .boss-tree .subject h1 {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: 25px; }
+  .boss-tree .chair {
+    width: 300px;
+    margin: 0 auto;
+    display: block; }
+  .boss-tree .profile {
+    position: relative; }
+    .boss-tree .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      display: block;
+      margin-right: -10px;
+      box-shadow: 0px 0px 0px 2px #e2af23;
+      z-index: 2; }
+    .boss-tree .profile .text-box {
+      position: absolute;
+      left: -52px;
+      bottom: 0;
+      width: 120px;
+      color: #8e8e8e;
+      bottom: 25px;
+      z-index: 1; }
+      .boss-tree .profile .text-box .job {
+        font-size: 12px;
+        font-weight: 200;
+        color: #000;
+        margin-bottom: 5px; }
+      .boss-tree .profile .text-box .name {
+        font-size: 12px;
+        font-weight: 200; }
+    .boss-tree .profile.boss img {
+      width: 201px;
+      height: 201px;
+      border: 7px solid #fff;
+      margin: 0 auto;
+      margin-top: 84px;
+      position: relative;
+      left: 43px; }
+    .boss-tree .profile.boss .text-box {
+      width: 390px;
+      right: -80px;
+      bottom: 55px; }
+      .boss-tree .profile.boss .text-box .name {
+        font-size: 22px;
+        margin-bottom: 15px; }
+      .boss-tree .profile.boss .text-box .job {
+        font-size: 23px;
+        color: #000; }
+  .boss-tree .level-2 {
+    margin-top: 80px; }
+    .boss-tree .level-2 .middle-middle:before {
+      content: "";
+      height: 80px;
+      width: 1px;
+      background-color: #e2af23;
+      position: absolute;
+      right: 29%;
+      display: block;
+      top: -80px;
+      margin: 0 auto; }
+    .boss-tree .level-2 .col-lg-2:after {
+      content: "";
+      position: absolute;
+      width: 285px;
+      height: 205px;
+      border: solid 1px #e2af23;
+      border-color: #e2af23 transparent transparent transparent;
+      border-radius: 50%/100% 100% 15px 0;
+      right: -183px;
+      top: -48px;
+      z-index: 1; }
+    .boss-tree .level-2 .col-lg-2:first-child:after {
+      display: none; }
+  .boss-tree .level-1 {
+    margin-top: 80px;
+    position: relative; }
+    .boss-tree .level-1:before {
+      content: '';
+      width: 765px;
+      height: 1px;
+      background-color: #e2af23;
+      position: absolute;
+      right: 14%;
+      top: -40px; }
+    .boss-tree .level-1 .middle:before {
+      content: "";
+      height: 40px;
+      width: 1px;
+      background-color: #e2af23;
+      position: absolute;
+      top: -40px;
+      right: 30%; }
+    .boss-tree .level-1 .middle:after {
+      content: "";
+      width: 215px;
+      height: 1px;
+      position: absolute;
+      bottom: -43px;
+      background-color: #e2af23; }
+    .boss-tree .level-1 .middle.right:after {
+      right: 21%;
+      transform: rotate(-22deg); }
+    .boss-tree .level-1 .middle.left:after {
+      right: -75%;
+      transform: rotate(22deg); }
+    .boss-tree .level-1 .first:before,
+    .boss-tree .level-1 .last:before {
+      content: "";
+      width: 395px;
+      height: 1px;
+      position: absolute;
+      bottom: -42px;
+      background-color: #e2af23; }
+    .boss-tree .level-1 .first:before {
+      right: 28%;
+      transform: rotate(-12deg); }
+    .boss-tree .level-1 .last:before {
+      left: 68%;
+      transform: rotate(12deg); }
+    .boss-tree .level-1 .middle-middle:after {
+      content: "";
+      height: 80px;
+      width: 1px;
+      background-color: #e2af23;
+      position: absolute;
+      bottom: -82px;
+      right: 28%; }
+    .boss-tree .level-1 .first:after,
+    .boss-tree .level-1 .last:after {
+      content: "";
+      top: -40px;
+      width: 50px;
+      height: 40px;
+      background-color: transparent;
+      position: absolute; }
+    .boss-tree .level-1 .first:after {
+      border-top-right-radius: 10px;
+      border-top: 1px solid #e2af23;
+      border-right: 1px solid #e2af23;
+      right: 27%; }
+    .boss-tree .level-1 .last:after {
+      border-top-left-radius: 10px;
+      border-top: 1px solid #e2af23;
+      border-left: 1px solid #e2af23;
+      right: 5%; }
+
+.bosses-words {
+  padding: 50px 0;
+  padding-top: 100px; }
+  .bosses-words .display-flex-r {
+    margin: 20px;
+    margin-right: 30px !important;
+    margin-left: 30px !important;
+    border-radius: 5px;
+    border: 1px solid #bababa; }
+    .bosses-words .display-flex-r .profile-box {
+      width: 20%; }
+    .bosses-words .display-flex-r .news-content {
+      padding-left: 0px !important;
+      padding: 15px;
+      width: 80%;
+      padding-right: 0; }
+      .bosses-words .display-flex-r .news-content .text {
+        font-size: 19px;
+        color: #000;
+        margin-top: 15px; }
+      .bosses-words .display-flex-r .news-content span {
+        font-size: 16px;
+        color: #000; }
+
+.boss-bio .details {
+  margin: 0 30px;
+  margin-top: -21px;
+  padding: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #bababa; }
+  .boss-bio .details p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+    color: #888888; }
+.boss-bio .landing-news .pagination {
+  position: absolute !important;
+  width: 280px;
+  left: 17px; }
+
+.specific-news.boss-person .news-content {
+  padding-left: 0 !important;
+  padding-right: 0;
+  padding-top: 6px;
+  padding: 0;
+  padding-top: 15px;
+  width: 60%; }
+
+.specific-news.boss-person .profile-box {
+  width: 40%; }
 
 footer.banner_3 {
   padding: 0; }

@@ -11,12 +11,19 @@ body {
 .width-full {
   width: 100%;
 }
+.just-flex {
+  display: flex;
+}
 
 a {
   text-decoration: none;
   &:hover {
     text-decoration: none;
   }
+}
+
+.no_border {
+  border: none !important;
 }
 
 a.sa_white_link {

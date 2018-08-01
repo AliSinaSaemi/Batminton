@@ -949,6 +949,11 @@ span.span_size {
       }
     }
   }
+  &.post {
+    li {
+      margin-right: 0;
+    }
+  }
 }
 
 .next-match {
