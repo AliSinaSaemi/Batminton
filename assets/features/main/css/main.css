@@ -2784,6 +2784,31 @@ span.span_size {
 .boss-table {
   padding-top: 100px;
   padding-bottom: 30px; }
+  .boss-table #accordion .card-body .hover-boss img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; }
+  .boss-table #accordion .card-body .hover-boss p {
+    color: #000;
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    right: 70px; }
+    .boss-table #accordion .card-body .hover-boss p span {
+      color: #e2af23;
+      position: absolute;
+      right: -50px;
+      top: -2px; }
+  .boss-table #accordion .card-header {
+    background-color: #fff; }
+    .boss-table #accordion .card-header button {
+      width: 100%;
+      color: #9e9e9e; }
+      .boss-table #accordion .card-header button:hover, .boss-table #accordion .card-header button:focus {
+        box-shadow: none;
+        border: none;
+        text-decoration: none;
+        outline: none; }
   .boss-table .map {
     width: 100%;
     padding: 15px;
@@ -3865,6 +3890,58 @@ footer .copyright {
 @media (max-width: 576px) {
   .shop-list .header h3 {
     margin-bottom: 45px; } }
+/* boss-table */
+@media (max-width: 1200px) {
+  .boss-table .map {
+    height: 395px; }
+    .boss-table .map img {
+      top: -210px; } }
+@media (max-width: 992px) {
+  .boss-table .table {
+    display: none; }
+  .boss-table .map {
+    height: 295px; }
+    .boss-table .map img {
+      top: -150px; } }
+@media (max-width: 768px) {
+  .boss-table .number-members {
+    margin-top: 20px;
+    margin-left: auto !important;
+    display: block; }
+  .boss-table .map {
+    height: 225px; }
+    .boss-table .map img {
+      top: -105px; }
+  .boss-table img {
+    margin-bottom: 20px; }
+  .boss-table .display-flex-r {
+    flex-direction: column; }
+
+  .boss-table #accordion .card-body .hover-boss p {
+    top: -15px;
+    right: 35px;
+    left: 0;
+    margin: auto;
+    text-align: center; }
+
+  .boss-table #accordion .card-body .hover-boss img {
+    margin: auto;
+    margin-bottom: 30px; }
+
+  .boss-table #accordion .card-body .hover-boss p span {
+    right: 5px; } }
+@media (max-width: 576px) {
+  .boss-table .hover-boss {
+    margin-top: 30px; }
+    .boss-table .hover-boss p {
+      right: 60px; }
+
+  .boss-table #accordion .card-body .hover-boss p {
+    top: -15px;
+    right: 55px;
+    left: 0;
+    margin: auto;
+    text-align: center; } }
 /* product */
 @media (max-width: 768px) {
   .selected-product .row .col-md-6:nth-child(2) {

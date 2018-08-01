@@ -804,6 +804,88 @@ $min_1200px: '(min-width: 1200px)';
 }
 
 
+/* boss-table */
+
+@media #{$max_1200px} {
+  .boss-table {
+    .map {
+      height: 395px;
+      img {
+        top: -210px;
+      }
+    }
+  }
+}
+
+@media #{$max_992px} {
+  .boss-table {
+    .table {
+      display: none;
+    }
+    .map {
+      height: 295px;
+      img {
+        top: -150px;
+      }
+    }
+  }
+}
+
+@media #{$max_768px} {
+  .boss-table {
+    .number-members {
+      margin-top: 20px;
+      margin-left: auto !important;
+      display: block;
+    }
+    .map {
+      height: 225px;
+      img {
+        top: -105px;
+      }
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    .display-flex-r {
+      flex-direction: column;
+    }
+  }
+  .boss-table #accordion .card-body .hover-boss p {
+    top: -15px;
+    right: 35px;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .boss-table #accordion .card-body .hover-boss img {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .boss-table #accordion .card-body .hover-boss p span {
+    right: 5px;
+  }
+}
+
+@media #{$max_576px} {
+  .boss-table {
+    .hover-boss {
+      margin-top: 30px;
+      p {
+        right: 60px;
+      }
+    }
+  }
+  .boss-table #accordion .card-body .hover-boss p {
+    top: -15px;
+    right: 55px;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
 /* product */
 
 @media #{$max_768px} {
