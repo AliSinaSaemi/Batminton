@@ -48,6 +48,12 @@ $min_1200px: '(min-width: 1200px)';
       }
     }
   }
+  .navbar {
+    padding: 30px;
+  }
+  .navbar .navbar-brand {
+    display: none;
+  }
 }
 
 @media #{$min_768px} {
@@ -64,6 +70,14 @@ $min_1200px: '(min-width: 1200px)';
         padding-left: 55px;
       }
     }
+  }
+}
+
+@media #{$max_576px} {
+  .main-landing .left-side .box-1 > .row {
+    padding: 20px;
+    padding-top: 50px;
+    justify-content: center !important;
   }
 }
 
@@ -87,6 +101,20 @@ $min_1200px: '(min-width: 1200px)';
         left: 8px;
       }
     }
+  }
+  .main-landing .left-side .box-1 .news-content .title {
+    font-size: 8px;
+  }
+  .main-landing .left-side .box-1 .news-content .date {
+    margin-top: -10px;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .main-landing .left-side .box-2 .news-content .btn_2 {
+    position: static;
+  }
+  .instantaneous-news .owl-nav {
+    width: 45px;
   }
 }
 
@@ -136,6 +164,9 @@ $min_1200px: '(min-width: 1200px)';
   .main-landing {
     .right-side {
       margin-bottom: 20px;
+      .demo-leagues {
+        margin-top: 25px;
+      }
     }
   }
   .latest-matches-1 {
@@ -395,9 +426,6 @@ $min_1200px: '(min-width: 1200px)';
 }
 
 
-/* managers */
-
-
 /* player */
 
 @media #{$max_992px} {
@@ -548,6 +576,24 @@ $min_1200px: '(min-width: 1200px)';
   }
 }
 
+@media #{$max_576px} {
+  .news-section .border-box-2 .news-content {
+    padding-right: 0;
+    margin-right: 40px;
+  }
+  .news-section {
+    .border-box-2 .social > div {
+      margin-left: 10px;
+    }
+    .pagination {
+      margin-right: 0;
+      li {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
 
 /* specific news */
 
@@ -571,7 +617,7 @@ $min_1200px: '(min-width: 1200px)';
         margin-left: 50px;
       }
       .news-content {
-        padding-right: 15px;
+        padding-right: 0;
       }
     }
     .comments {
@@ -622,6 +668,282 @@ $min_1200px: '(min-width: 1200px)';
           bottom: -45px;
         }
       }
+    }
+  }
+}
+
+
+/* shopping-list */
+
+@media #{$max_992px} {
+  .shopping-list {
+    text-align: right !important;
+    .item-detail {
+      padding: 30px;
+      img {
+        background-color: #cccccc;
+      }
+    }
+    h4 {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    .header {
+      display: none;
+    }
+  }
+  .shopping-list .item-detail .custom-checkbox {
+    top: 15px;
+    right: 0;
+    margin: 0;
+  }
+  .shopping-list .item-detail .select-size button.checked {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: inherit;
+  }
+  .shopping-list.selected-product .sale {
+    margin-bottom: 0;
+    color: #15b095;
+    margin-top: 10px !important;
+  }
+  .shopping-list .item-detail .counter {
+    margin: auto;
+    width: 93px;
+    margin: 0;
+    margin-top: 20px !important;
+  }
+}
+
+@media #{$max_768px} {
+  .shopping-list {
+    text-align: right !important;
+    h4 {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+@media #{$max_576px} {
+  .shopping-list .item-detail {
+    padding: 10px;
+    .col-4 {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .shopping-list .item-detail .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+  }
+  .shopping-list .item-detail .select-size button.checked {
+    margin-top: 30px;
+  }
+  .shopping-list .item-detail .counter {
+    margin-top: 10px !important;
+    button {
+      width: 25px;
+      height: 35px;
+    }
+  }
+  .shopping-list.selected-product .sale {
+    margin-top: -3px !important;
+    font-size: 12px;
+  }
+  .shopping-list.selected-product .counter p {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+  .shopping-list .btn_1 {
+    font-size: 10px;
+  }
+  .shopping-list .total-price {
+    font-size: 12px;
+  }
+}
+
+
+/* product */
+
+@media #{$max_768px} {
+  .selected-product .row .col-md-6:nth-child(2) {
+    border-top: none;
+    border-bottom: 1px solid #b5b5b5;
+    border-left: 1px solid #b5b5b5;
+    border-right: 1px solid #b5b5b5;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media #{$max_576px} {
+  .selected-product {
+    padding: 70px 10px;
+  }
+}
+
+
+/* player */
+
+@media #{$max_768px} {
+  .related {
+    display: none;
+  }
+}
+
+
+/* boss-bio */
+
+@media #{$max_1200px} {
+  .bosses-words .display-flex-r .profile-box {
+    width: 25%;
+  }
+  .bosses-words .display-flex-r .news-content {
+    width: 75%;
+  }
+}
+
+@media #{$max_992px} {
+  .bosses-words .display-flex-r .profile-box {
+    width: 40%;
+  }
+  .bosses-words .display-flex-r .news-content {
+    width: 60%;
+  }
+  .bosses-words .display-flex-r .news-content .text {
+    font-size: 19px;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+}
+
+@media #{$max_768px} {
+  .bosses-words .display-flex-r .news-content,
+  .bosses-words .display-flex-r .profile-box {
+    width: 100%;
+  }
+  .bosses-words .display-flex-r {
+    flex-direction: column;
+    .hr-divider-2,
+    .hr-divider-1 {
+      display: none;
+    }
+  }
+}
+
+@media #{$max_576px} {
+  .bosses-words .display-flex-r .news-content {
+    padding-right: 0;
+    margin-top: 5px;
+    line-height: 25px;
+  }
+  .specific-news .news-content .date,
+  .specific-news .news-content .title,
+  .specific-news .news-content .text {
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 14px !important;
+    display: block;
+  }
+  .specific-news .news-content .text {
+    font-size: 16px !important;
+  }
+  .bosses-words {
+    .landing-news {
+      margin: 20px;
+      .pagination {
+        bottom: 13px;
+        left: 45px;
+      }
+    }
+  }
+}
+
+
+/* bosses-person */
+
+@media #{$max_1200px} {
+  .specific-news.boss-person .profile-box {
+    width: 50%;
+  }
+  .social-media-2 {
+    display: none;
+  }
+}
+
+@media #{$max_992px} {
+  .boss-person {
+    .right_side {
+      margin-bottom: 25px;
+    }
+  }
+  #owl-seven .owl-nav {
+    bottom: 50%;
+  }
+}
+
+@media #{$max_768px} {
+  .boss-person {
+    .news-content {
+      margin-right: 0;
+    }
+    .display-flex-r {
+      flex-direction: column;
+    }
+    hr {
+      display: none;
+    }
+  }
+  .specific-news.boss-person .news-content {
+    margin-right: 0;
+  }
+  .specific-news.boss-person .profile-box,
+  .specific-news.boss-person .news-content {
+    width: 100%;
+  }
+  .specific-news .news-content .social {
+    margin-bottom: 0px;
+  }
+}
+
+
+/* forms */
+
+@media #{$max_992px} {
+  .forms {
+    padding-top: 50px;
+    .total-price {
+      font-size: 10px;
+    }
+    .btn_1 {
+      padding: 5px 13px;
+      font-size: 11px;
+    }
+  }
+}
+
+@media #{$max_768px} {
+  .forms {
+    .total-price,
+    .btn_1 {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media #{$max_576px} {
+  .forms {
+    padding: 50px 0;
+    .btn_1 {
+      margin-top: 0;
+      margin-left: auto !important;
+      margin-right: inherit !important;
+    }
+    .display-flex-r {
+      flex-direction: column;
     }
   }
 }
