@@ -745,6 +745,20 @@ span.span_size {
       border-bottom: 1px solid #9c9c9c;
     }
   }
+  .header {
+    position: relative;
+    ul {
+      position: absolute;
+      left: 0;
+      bottom: -14px;
+      li {
+        margin-left: 30px;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
   .header.item {
     border-right: 13px solid #43bfaa;
   }
@@ -754,6 +768,40 @@ span.span_size {
       padding: 20px;
       font-size: 17px;
       font-weight: bold;
+    }
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .4s;
+  }
+  .dropdown-content a:hover {
+    background-color: #f9f9f9;
+    color: #e2af23;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover {
+    .dropbtn {
+      background-color: #ffffff;
+      &:after {
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -835,6 +883,11 @@ span.span_size {
     width: 100%;
     > div {
       margin-left: 20px;
+      .name {
+        font-size: 12px;
+        position: relative;
+        bottom: 5px;
+      }
     }
     .user-input {
       margin-top: 7px;
@@ -926,6 +979,16 @@ span.span_size {
 .pagination {
   margin-right: 15px;
   margin-top: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  &.center {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &.left-margin {
+    margin-left: 15px;
+  }
   li {
     margin-right: 10px;
     a {
@@ -935,6 +998,7 @@ span.span_size {
       width: 35px;
       height: 36px;
       font-size: 18px;
+      border-radius: 4px;
       text-align: center;
     }
     &:last-child {
@@ -1000,7 +1064,7 @@ span.span_size {
         margin-top: -27px;
         margin-bottom: 5px;
         li {
-          margin-left: 24px;
+          margin-left: 20px;
           margin-right: 0px;
           &:last-child {
             margin-left: 0;
@@ -1102,6 +1166,80 @@ span.span_size {
 }
 
 .cutomized-form-radio {
+  &.check-box-2 {
+    .checkmark {
+      height: 30px;
+      width: 30px;
+      border-radius: 0;
+      &.red {
+        background-color: #dc3545;
+      }
+      &.gray {
+        background-color: #808080;
+      }
+      &.green {
+        background-color: #35a235;
+      }
+      &:after {
+        content: "\f00c";
+        font-family: FontAwesome;
+        font-size: 20px;
+        top: -0.5px;
+        left: 10.5px;
+        background-color: transparent !important;
+        color: #fff;
+      }
+    }
+  }
+  &.check-box-3 {
+    .checkmark {
+      height: 25px;
+      width: 40px;
+      background-color: transparent !important;
+      border: 1px solid #565656;
+      border-radius: 0;
+      &:after {
+        background: transparent !important;
+      }
+      &:before {
+        background-color: transparent !important;
+        color: #000;
+        font-family: 'IRANSans', 'IRANSans_num_web';
+        font-size: 20px;
+        display: block;
+        text-align: center;
+      }
+    }
+    &:hover {
+      input ~ .checkmark {
+        border-color: #15b095;
+        &:before {
+          color: #15b095;
+        }
+      }
+    }
+    input:checked ~ .checkmark {
+      border-color: #15b095;
+      &:before {
+        color: #15b095;
+      }
+    }
+    .modern {
+      &:before {
+        content: "M";
+      }
+    }
+    .large {
+      &:before {
+        content: "L";
+      }
+    }
+    .xlarge {
+      &:before {
+        content: "XL";
+      }
+    }
+  }
   display: block;
   position: relative;
   padding-left: 35px;
@@ -1152,6 +1290,13 @@ span.span_size {
   input:checked ~ .checkmark:after {
     display: block;
   }
+}
+
+.countDown_1 {
+  margin-left: auto;
+  margin-bottom: 25px;
+  width: 100%;
+  font-size: 25px;
 }
 
 .custom-checkbox {

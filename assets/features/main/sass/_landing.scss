@@ -1,6 +1,5 @@
 .banner {
-  background-image: url(../../../img/bg/bg_1.jpg);
-  background-attachment: fixed;
+  background-image: url(../../../img/bg/bg_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -158,12 +157,11 @@
   .left-side {
     .box-1 {
       > .row {
-        padding: 70px;
-        padding-top: 50px;
+        padding: 15px 70px;
         justify-content: center!important;
       }
       .row_padding_bottom {
-            padding-bottom: 20px;
+        padding-bottom: 20px;
       }
       .row_padding_top {
         padding-top: 20px;
@@ -179,6 +177,10 @@
           left: -7px;
           bottom: 5px;
           margin-left: 0;
+          &.display-flex-rr {
+            display: flex;
+            flex-direction: row-reverse;
+          }
           .user-input {
             i {
               font-size: 20px;
@@ -189,7 +191,8 @@
           }
         }
         .date {
-          margin-bottom: 8px;
+          margin-top: 0;
+          margin-bottom: 20px;
         }
       }
     }

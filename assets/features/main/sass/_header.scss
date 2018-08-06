@@ -115,11 +115,15 @@ $min_1200px: '(min-width: 1200px)';
     margin-right: 25px !important;
     .nav-link {
       transition: .2s;
+      border-radius: 5px;
       &:focus,
       &:hover {
         color: #2a343d;
         background-color: #e2af23;
-        border-radius: 5px;
+      }
+      &.active {
+        background-color: #e2af23 !important;
+        color: #fff;
       }
     }
   }
@@ -152,7 +156,7 @@ $min_1200px: '(min-width: 1200px)';
     padding: 6px;
     color: #fff;
     background-color: #2a343d;
-    min-width: 200px;
+    min-width: 245px;
     .dropdown-divider {
       border-top: 1px solid #353f48;
     }

@@ -41,6 +41,12 @@
   .select-size {
     ul {
       margin-right: 30px;
+      li {
+        margin-left: 5px;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
     }
     button {
       background: transparent;
